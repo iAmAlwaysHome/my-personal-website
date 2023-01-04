@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Lina</title>
+    
+ 
+  
+  <script src="https://kit.fontawesome.com/0dcbce5e8a.js" crossorigin="anonymous"></script>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+ 
+  <link rel="stylesheet" href="/src/styles.css" />  
+  
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  
+  <div class="preloader"> <img src="/src/preload.svg" alt="preloader animation"> </div> 
+  
+  <div id="all">   
+    
+    <div id="app">      
+      
+      
+      
+      <div class="container-fluid"> 
+         
+        <div class="fixed-top">
+        <div class="row ">          
+        <div class="col-9"></div>
+        <div class="col-3">
+        <nav class="navbar navbar-expand-lg navbar-dark .bg-transparent">
+          <a class="navbar-brand" href="/"><i class="fa-solid fa-house social-media-icon" style="font-size:14px; position:  relative; left:10px; bottom: 3px;"></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <div id="nav-about-wrapper">
+                <a class="nav-link fs-35" href="/about.html">About</a>
+              </div>
+              </li>
+              <li class="nav-item">
+                <div id="nav-work-wrapper">
+                <a class="nav-link fs-35" href="/work.html">Work</a>
+              </div>
+              </li>
+              <li class="nav-item">
+                <div id="nav-contact-wrapper">
+                <a class="nav-link fs-35" href="/contact.html">Contact</a>
+              </div>
+              </li>
+            </ul>
+          </div>
+        
+          
+        </nav>      
+      </div>   
+        </div> 
+        </div> 
+        
+        <div class="hero-text" style="position: relative; bottom: 110px;">
+        
+        <div class="row">
+
+          <div class="col-1"></div>
+          
+          <div class="col-8">
+          <div class="profile-preview mt-5">
+            <h1 class="username-lg"  >
+              <span class="hero-text-line">Hey, <a class="hero-name" href="/about.html" >I'm Lina.</a> A software developer</span><br>
+              <span class="hero-text-line">from 🇺🇦 Ukraine. I'm at the start</span><br>
+              <span class="hero-text-line">of my programming career.</span><br>
+            </h1>
+          </div>
+          
+          <div class="col-3"></div>
+          
+        </div>
+        </div>
+        
+        <div class="row" >
+
+        <div class="col-9"></div>
+          
+        <div class="col-2" style="position: relative; top: 180px;">
+        <a class="hero-action"  href="mailto:meiamalwayshome@gmail.com"> <span class="myunderline">Hire me</span>  😇</a><br>
+        <!-- 😉  👩‍💻 -->         
+        </div>
+      
+        <div class="col-1"></div>
+        
+        </div>
+        
+      </div>
+               
+        <div class="fixed-bottom">
+          
+        <div class="row">      
+        <hr class="w-100 mt-5" style="position:relative; top:60px"> 
+        </div>           
+        
+        <div class="row text-center mt-5">
+          
+          <div class="col-sm my-3 " >
+            <h2 class="fs-35">Latest commit</h2>
+            <div id="lat-com-wrapper" >
+            <a href="https://github.com/iAmAlwaysHome/sc-responsive-" class="ff-pop"></a>
+          </div>
+            <span class="commit-date text-muted" id="lat-com-date"></span>
+          </div>
+          
+          <div class="col-sm my-3" >
+            <h2 class="fs-35">Latest follower</h2>
+            <div id="lat-fol-link-wrapper">
+            <a href="https://github.com/iAmAlwaysHome/" class="ff-pop latest-link"><img width="25" height="25" src="https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652&ssl=1" class="rounded-circle border"></a></div>
+            <p class="text-muted" id="lat-fol-n"></p>           
+          </div>
+          
+          <div class="col-sm my-3">
+            <h2 class="fs-35">Latest repository</h2>
+            <div id="lat-repo-wrapper">
+            <a href="https://github.com/iAmAlwaysHome/v-viewer" class="ff-pop latest-link"></a>
+          </div>
+            <span class="commit-date text-muted" id="lat-repo-date"></span>
+          </div>
+          
+        </div>
+        </div>
+        
+      </div>
+        
+    </div>
+      
+      
+  </div>
+  
+  
+  
+  <canvas id="canvas" class="canvas" width="1280px" height="800px"></canvas> 
+  
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="src/index.js"></script>
+  
+  
+</body>
+</html>
