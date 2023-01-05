@@ -23,7 +23,7 @@
 .table {
   width: 75vw;
   height: 57vh;
-  background: rgba(0, 0, 0);
+  background: rgb(255, 255, 255);
   border-top: 1rem solid var(--cat-color);
   left: 50%;
   top: 65%;
@@ -43,13 +43,13 @@
   border-radius: 50%;
 }
 .cat .ears.fill .ear:first-child {
-  border-bottom: 8rem solid rgb(0, 0, 0);
+  border-bottom: 8rem solid rgb(255, 255, 255);
   border-left: 7rem solid transparent;
   border-right: 7rem solid transparent;
   transform: translate(17rem, -5rem) rotate(-15deg);
 }
 .cat .ears.fill .ear:last-child {
-  border-bottom: 10rem solid rgb(0, 0, 0);
+  border-bottom: 10rem solid rgb(255, 255, 255);
   border-left: 3rem solid transparent;
   border-right: 9rem solid transparent;
   transform: translate(53rem, -2rem) rotate(33deg);
@@ -122,7 +122,7 @@
   transform: rotate(150deg);
   width: 15rem;
   height: 14rem;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   border-bottom: 1rem solid var(--cat-color);
   border-right: 1rem solid var(--cat-color);
   border-radius: 0 0 50% 50%/0 0 70% 70%;
@@ -154,7 +154,7 @@
 .paws.down .paw {
   width: 15rem;
   height: 13rem;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   border-bottom: 1rem solid var(--cat-color);
   border-left: 1rem solid var(--cat-color);
   border-right: 1rem solid var(--cat-color);
@@ -170,7 +170,7 @@
   top: 0;
   right: 0;
   transform: translate(1rem, -90%);
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   border-right: 1rem solid var(--cat-color);
   width: 100%;
   height: 3rem;
