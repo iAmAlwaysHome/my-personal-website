@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root{
-  --text-color: #0056B3;
+  --cat-color: #ffffff;
 }
 
-body {
+.no_highlights{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {  
   background-color: rgb(0, 0, 0) !important;
 }
 
@@ -44,7 +53,7 @@ canvas {
   float: right;
   font-size: 40px;
   transition: color 0.7s linear;    
-  
+  opacity:0.8
 }
 
 #action, #mob-action{
@@ -55,7 +64,6 @@ canvas {
 
 .hero-action:hover{
   opacity:1;
-  
 }
 
 .social-url-wrapper {
@@ -63,7 +71,7 @@ canvas {
 }
 
 .social-media-icon {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
   color: transparent;
   transition: color 0.7s linear;
@@ -103,7 +111,7 @@ canvas {
 
 .preloader {
   align-items: center;
-  background: white;
+  background: rgb(0, 0, 0);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -165,6 +173,11 @@ a{
 .latest-link, .text-muted {
   font-size: 14px ;  
   display: inline;
+  color: var(--cat-color) !important;
+}
+
+.text-muted {
+  opacity:0.6
 }
 
 .latest-link:hover{
@@ -176,11 +189,11 @@ a{
 }
 
 .github-block{
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 .github-block:hover{
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /*
@@ -282,3 +295,4 @@ a{
     font-size: 20px;
   }
 }
+

@@ -88,7 +88,8 @@ function rand() {
 	//console.log(getComputedStyle(document.querySelector(":root")).getPropertyValue('--text-color'));
 	//document.documentElement.style.setProperty = ('--text-color',`black`);	
    //console.log(getComputedStyle(document.querySelector(":root")).getPropertyValue('--text-color'));
-	
+   document.documentElement.style.setProperty(`--cat-color`, `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`);
+
 	document.querySelector(".username-lg").style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
 	document.querySelector(".w-100").style.background = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
 	document.querySelector(".hero-action").style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
