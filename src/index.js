@@ -175,6 +175,7 @@ async function get_latest_repo() {
 
 }
 
+/*
 async function get_latest_commit() {
 	let response = await axios.get('https://api.github.com/users/iAmAlwaysHome/events/public');
 	response = response.data;	
@@ -185,13 +186,29 @@ async function get_latest_commit() {
 			let payload = event['payload'];
 			let commit = payload['commits'][0];
 			let repo = event['repo']['name'];
-
-			document.querySelector("#lat-com-date").innerHTML=convert_time(event['created_at']);	
-			
 			let url = 'https://github.com/' + repo + '/commit/' + commit['sha'];
+			
+			document.querySelector("#lat-com-date").innerHTML=convert_time(event['created_at']);				
 			document.querySelector("#lat-com-wrapper").innerHTML=`<a  href="${url}" class="ff-pop" > ${commit['message']} </a>`;		
-		}
+			return;
+		}		
 	}
+}
+*/
+
+async function get_latest_commit() {
+	let responseRepo = await axios.get('https://api.github.com/users/iAmAlwaysHome/repos?sort=created&per_page=1');
+	responseRepo = responseRepo.data[0];
+	
+	let responseCom = await axios.get(`https://api.github.com/repos/iAmAlwaysHome/${responseRepo['name']}/branches/main`);
+	
+	responseCom = responseCom.data.commit; 	
+	let url = responseCom.html_url;
+	let msg = responseCom.commit.message;
+	let date = responseCom.commit.committer.date; 
+	
+	document.querySelector("#lat-com-date").innerHTML=convert_time(date);				
+	document.querySelector("#lat-com-wrapper").innerHTML=`<a  href="${url}" class="ff-pop" > ${msg} </a>`;		
 }
 
 
@@ -228,17 +245,24 @@ function copyDiscord() {
 	var copyText = "iamalwayshome#1637";  
 	 // Copy the text inside the text field
 	navigator.clipboard.writeText(copyText);  
-	// Alert the copied text
-	alert("Copied the text: " + copyText);
   }
+  
+  function copyEmail() {
+	var copyText = "meiamalwayshome@gmail.com";  
+	 // Copy the text inside the text field
+	navigator.clipboard.writeText(copyText);  
+  }
+  
 
 window.onload = () => fadeEffect;
 const preloader = document.querySelector(".preloader");
+
 get_latest_repo();
 get_latest_commit();
 get_latest_follower();
 
 document.querySelector("#discord-contact").addEventListener("click", copyDiscord);
+document.querySelector("#email-contact").addEventListener("click", copyEmail);
 
 
 let m = document.querySelectorAll("li.nav-item a");
@@ -248,6 +272,3 @@ for (let i = 0; i < m.length; i++) {
 	m[i].addEventListener("mouseleave", unclr_menu_underline);
 
 }
-
-console.log(getComputedStyle(document.querySelector(":root")).getPropertyValue('--text-color')); 
-

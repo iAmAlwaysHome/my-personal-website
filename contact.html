@@ -19,13 +19,15 @@
       <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         
+        
+        
         <div class="preloader"> <img src="/src/preload.svg" alt="preloader animation"> </div> 
+        <canvas id="canvas" class="canvas" width="1280px" height="800px"></canvas> 
+        
         
         <div id="all">   
           
-          <div id="app">      
-            
-            
+          <div id="app">          
             
             <div class="container-fluid"> 
                
@@ -68,108 +70,104 @@
               
                 <div class="hero-text" style="position: relative; bottom: 110px;">
         
-                  <div class="row">
-          
-                    <div class="col-1"></div>
+                    <div class="row">
+            
+                      <div class="col-1"></div>
+                      
+                      <div class="col-8">
+                      <div class="profile-preview mt-5">
+                        <h1 class="username-lg"  >
+                          <span class="hero-text-line">Hey, <a class="hero-name" href="/about.html" >I'm Lina.</a> A software developer</span><br>
+                          <span class="hero-text-line">from 🇺🇦 Ukraine. I'm at the start</span><br>
+                          <span class="hero-text-line">of my programming career.</span><br>
+                        </h1>
+                      </div></div>
+                      
+                      <div class="col-3"></div>
+                      
+                    </div>  
                     
-                    <div class="col-8">
-                    <div class="profile-preview mt-5">
-                      <h1 class="username-lg"  >
-                        <span class="hero-text-line">Hey, <a class="hero-name" href="/about.html" >I'm Lina.</a> A software developer</span><br>
-                        <span class="hero-text-line">from 🇺🇦 Ukraine. I'm at the start</span><br>
-                        <span class="hero-text-line">of my programming career.</span><br>
-                      </h1>
+                    <div class="row">
+                      <div class="social-media-links-wrapper text-center mt-4">
+                        <a href="https://github.com/iAmAlwaysHome" class="social-url-wrapper p-2">
+                          <i class="social-media-icon p-2 rounded fab fa-github " ></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/" class="social-url-wrapper p-2">
+                          <i class="social-media-icon p-2 rounded fab fa-linkedin " ></i>
+                        </a>
+                        <a href="https://t.me/callme3times" class="social-url-wrapper p-2">
+                          <i class="social-media-icon p-2 rounded fab fa-telegram " ></i>
+                        </a>
+                        <a  class="social-url-wrapper p-2">
+                          <i class="social-media-icon p-2 rounded fab fa-discord " id="discord-contact"></i>
+                          
+                        </a>
+                        <a  class="social-url-wrapper p-2">
+                          <i class="social-media-icon p-2 rounded  fa-solid fa-square-envelope " id="email-contact"></i></a>
+                          
+                      </div>                    
+                    </div> 
+                    
+                    <div class="row" >
+            
+                      <div class="col-9"></div>
+                        
+                      <div class="col-2" style="position: relative; top: 180px;">
+                      <a class="hero-action"  href="mailto:meiamalwayshome@gmail.com" style="text-decoration: none;"> <span class="myunderline">Hire me</span>  😇</a><br>
+                      <!-- 😉  👩‍💻 -->         
+                      </div>
+                    
+                      <div class="col-1"></div>
+                      
+                      </div>
+                    
+                </div> 
+              
+                <div class="fixed-bottom">
+          
+                  <div class="row">      
+                  <hr class="w-100 mt-5" style="position:relative; top:60px"> 
+                  </div>           
+                  
+                  <div class="row text-center mt-5">
+                    
+                    <div class="col-sm my-3 " >
+                      <h2 class="fs-35">Latest commit</h2>
+                      <div id="lat-com-wrapper" >
+                      <a href="https://github.com/iAmAlwaysHome/sc-responsive-" class="ff-pop"></a>
+                    </div>
+                      <span class="commit-date text-muted" id="lat-com-date"></span>
                     </div>
                     
-                    <div class="col-3"></div>
+                    <div class="col-sm my-3" >
+                      <h2 class="fs-35">Latest follower</h2>
+                      <div id="lat-fol-link-wrapper">
+                      <a href="https://github.com/iAmAlwaysHome/" class="ff-pop latest-link"><img width="25" height="25" src="https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652&ssl=1" class="rounded-circle border"></a></div>
+                      <p class="text-muted" id="lat-fol-n"></p>           
+                    </div>
+                    
+                    <div class="col-sm my-3">
+                      <h2 class="fs-35">Latest repository</h2>
+                      <div id="lat-repo-wrapper">
+                      <a href="https://github.com/iAmAlwaysHome/v-viewer" class="ff-pop latest-link"></a>
+                    </div>
+                      <span class="commit-date text-muted" id="lat-repo-date"></span>
+                    </div>
                     
                   </div>
                   </div>
-                  
-                  <div class="row" >
-          
-                  <div class="col-9"></div>
-                    
-                  <div class="col-2" style="position: relative; top: 180px;">
-                  <a class="hero-action"  href="mailto:meiamalwayshome@gmail.com" style="text-decoration: none;"> <span class="myunderline">Hire me</span>  😇</a><br>
-                  <!-- 😉  👩‍💻 -->         
-                  </div>
-                
-                  <div class="col-1"></div>
-                  
-                  </div>
-                  
-                </div>
               
-              
-                <div class="row">
-                <div class="social-media-links-wrapper text-center mt-4">
-                  <a href="https://github.com/iAmAlwaysHome" class="social-url-wrapper p-2">
-                    <i class="social-media-icon p-2 rounded fab fa-github " ></i>
-                  </a>
-                  <a href="https://www.linkedin.com/in/" class="social-url-wrapper p-2">
-                    <i class="social-media-icon p-2 rounded fab fa-linkedin " ></i>
-                  </a>
-                  <a href="https://t.me/callme3times" class="social-url-wrapper p-2">
-                    <i class="social-media-icon p-2 rounded fab fa-telegram " ></i>
-                  </a>
-                  <a  class="social-url-wrapper p-2">
-                    <i class="social-media-icon p-2 rounded fab fa-discord " id="discord-contact"></i>
-                    
-                  </a>
-                </div>
-                
-              </div> 
-              
-              <div class="fixed-bottom">
-          
-                <div class="row">      
-                <hr class="w-100 mt-5" style="position:relative; top:60px"> 
-                </div>           
-                
-                <div class="row text-center mt-5">
-                  
-                  <div class="col-sm my-3 " >
-                    <h2 class="fs-35">Latest commit</h2>
-                    <div id="lat-com-wrapper" >
-                    <a href="https://github.com/iAmAlwaysHome/sc-responsive-" class="ff-pop"></a>
-                  </div>
-                    <span class="commit-date text-muted" id="lat-com-date"></span>
-                  </div>
-                  
-                  <div class="col-sm my-3" >
-                    <h2 class="fs-35">Latest follower</h2>
-                    <div id="lat-fol-link-wrapper">
-                    <a href="https://github.com/iAmAlwaysHome/" class="ff-pop latest-link"><img width="20" height="20" src="https://i1.wp.com/cornellsun.com/wp-content/uploads/2020/06/1591119073-screen_shot_2020-06-02_at_10.30.13_am.png?fit=700%2C652&ssl=1" class="rounded-circle border"></a></div>
-                    <p class="text-muted" id="lat-fol-n"></p>           
-                  </div>
-                  
-                  <div class="col-sm my-3">
-                    <h2 class="fs-35">Latest repository</h2>
-                    <div id="lat-repo-wrapper">
-                    <a href="https://github.com/iAmAlwaysHome/v-viewer" class="ff-pop latest-link"></a>
-                  </div>
-                    <span class="commit-date text-muted" id="lat-repo-date"></span>
-                  </div>
-                  
-                </div>
-                </div>
-              
-              
-             </div>
-              
-          </div>
-            
-            
-        </div>
+             </div> 
+          </div> 
+        </div> 
         
-        
-        
-        <canvas id="canvas" class="canvas" width="1280px" height="800px"></canvas> 
+      
         
         <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
         <script src="src/index.js"></script>
         
         
       </body>
+      
+      
   </html>
