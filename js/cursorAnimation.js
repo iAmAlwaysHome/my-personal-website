@@ -86,12 +86,13 @@ function rand() {
 	};
 	
 	//console.log(getComputedStyle(document.querySelector(":root")).getPropertyValue('--text-color'));
-	document.documentElement.style.setProperty = ('--text-color',`rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`);	
+	//document.documentElement.style.setProperty = ('--text-color',`black`);	
    //console.log(getComputedStyle(document.querySelector(":root")).getPropertyValue('--text-color'));
 	
 	document.querySelector(".username-lg").style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
 	document.querySelector(".w-100").style.background = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
 	document.querySelector(".hero-action").style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
+	document.querySelector("#mob-action").style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
 	document.querySelector(".hero-name").style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
 	
 	let u =document.querySelectorAll('.myunderline');
@@ -113,24 +114,4 @@ function rand() {
 
 function randomInteger(min, max) {
 	return Math.floor(min + Math.random() * (max + 1 - min));
-}
-
-function move() {
-	var elem = document.getElementById("myBar");
-	var width = 0;
-	var id = setInterval(frame, 50);
-	function frame() {
-		if (width >= 100) {
-			clearInterval(id);
-		} else {
-			width++;
-			elem.style.width = width + "%";
-		}
-	}
-}
-
-function waitForImageToLoad(imageElement) {
-	return new Promise(resolve => {
-		imageElement.onload = resolve;
-	});
 }

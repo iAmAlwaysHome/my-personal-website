@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root{
-  --text-color: white;
+  --text-color: #0056B3;
 }
 
 body {
@@ -29,9 +29,8 @@ canvas {
 }
 
 #canvas {
-  background: white;
+  background: rgb(0, 0, 0);
 }
-
 
 .username-lg {
   font-family: 'Poppins', sans-serif;
@@ -40,30 +39,22 @@ canvas {
   transition: color 0.7s linear; 
 }
 
-.username-lg:hover {
-  color: white;
-}
-
 .hero-action {
-  position: relative;
   font-family: 'Poppins', sans-serif;
   float: right;
   font-size: 40px;
-  color: black;
   transition: color 0.7s linear;    
+  
 }
 
-.myunderline:after{
-content: "";
-position:absolute;
-bottom:-2px;
-left:0;
-width:100%;
-border-bottom:1px solid rgb(0, 0, 0); 
+#action, #mob-action{
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px; 
+  text-underline-position: under;
 }
 
-.status {
-  font-size: 17px;
+.hero-action:hover{
+  opacity:1;
   
 }
 
@@ -87,23 +78,8 @@ border-bottom:1px solid rgb(0, 0, 0);
   transition: 0.2s ease-in-out;
 }
 
-.cur-pointer {
-  cursor: pointer;
-}
-
-.slide {
-  margin-bottom: 30%;
-}
-
-.ff-pop {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
-  color:#0056B3;
-}
-
 .fs-35 {
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
   color: #000;
   transition: 0.5s linear;
   font-family: 'Poppins', sans-serif;
@@ -149,16 +125,7 @@ canvas#canvas {
   width: 100vw;
 }
 
-@media only screen and (max-width: 768px) {
-  canvas#canvas {
-    display: none;
-  }
-  #all {
-    display: block;
-    position: relative;
-    padding-top: 10%;
-  }
-}
+
 
 a{
   text-decoration: none;
@@ -188,28 +155,130 @@ a{
 
 .hero-action:hover, .nav-item a:hover:after {
   cursor:pointer !important;
-}
-
-
-.nav-item a {
-  position: relative;
   
 }
-.nav-item a:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  border-bottom: 0.5px solid var(--text-color);
-  transition: 0.4s;
+.nav-item a:hover  {
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 
-.nav-item a:hover:after {
-  width: 100%;
-  cursor:pointer;
+.latest-link, .text-muted {
+  font-size: 14px ;  
+  display: inline;
 }
 
+.latest-link:hover{
+  text-decoration: underline;
+}
 
+#lat-fol-link{
+  font-size:16px;
+}
 
+.github-block{
+  opacity: 0.4;
+}
 
+.github-block:hover{
+  opacity: 0.8;
+}
+
+/*
+
+@media only screen and  (max-width:1660px){
+  .username-lg {
+    font-size: 65px;
+  }
+  .hero-action {
+    font-size: 40px;
+  }
+  .fs-35 {
+    font-size: 18px;
+  }
+  .nav-link{
+    font-size: 22px !important;
+  }
+  .latest-link, .text-muted {
+    font-size: 14px ;  
+  }
+  #lat-fol-link{
+    font-size:16px;
+  }
+  .social-media-icon {
+    font-size: 40px;   
+  }  
+}
+*/
+
+.display-mob{
+  display: none;
+}
+
+@media only screen and  (max-width:1660px){
+  .username-lg {
+    font-size: 46px;
+  }
+  .hero-action {
+    font-size: 33px;
+  }
+  .nav-link{
+    position:relative;
+    right:100px;
+  }
+}
+
+@media only screen and  (max-width:1180px){
+  .username-lg {
+    font-size: 36px;
+  }
+  .hero-action {
+    font-size: 20px;
+  }
+  .nav-link{
+    position:relative;
+    right:150px;
+  }
+  .latest-link, .text-muted, #lat-fol-link {
+    font-size: 12px ;  
+  }
+  .fs-35 {
+    font-size: 14px;
+  }
+}
+
+@media only screen and  (max-width:992px){
+
+  .hero-action {
+    text-align: end;
+  }
+  
+  .hide-mob{
+    display:none;
+  }
+  
+  .display-mob{
+    display:inline;
+  }
+  
+  
+}
+
+@media only screen and  (max-width:925px){
+  .username-lg {
+    font-size: 28px;
+  }
+  .hide-mob-2{
+    display:none;
+  }
+  
+  .herosection{
+    position:relative;
+    bottom: 300px;
+  }
+}
+
+@media only screen and  (max-width:768px){
+  .username-lg {
+    font-size: 20px;
+  }
+}
