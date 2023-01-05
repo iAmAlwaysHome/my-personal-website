@@ -1,7 +1,7 @@
 const pupil = document.getElementsByClassName("eye");
 document.onmousemove = () => {
-	let x = (clientX * 8) / window.innerWidth + "%";
-	let y = (clientY * 8) / window.innerHeight + "%";
+	let x = (event.clientX * 8) / window.innerWidth + "%";
+	let y = (event.clientY * 8) / window.innerHeight + "%";
 
 	for (let i = 0; i < 2; i++) {
 	  pupil[i].style.left = x;
