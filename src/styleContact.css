@@ -1,7 +1,3 @@
-
-
-
-
 .hide {
   display: none;
 }
@@ -206,6 +202,8 @@
 
 /*
 
+/*
+
 @media only screen and  (max-width:1660px){
   .username-lg {
     font-size: 65px;
@@ -234,21 +232,30 @@
 
 @media only screen and  (max-width:1800px){
   .container {
-   zoom:30%; 
+  zoom:25%;
   }
-}
-
-@media only screen and  (max-width:1700px){
   .table {
     width: 100vw;
-    height: 57vh;
+    height: 77vh;
   }
+  .social-media-icon {
+    font-size: 24px;   
+  }  
+  .social-media-icon {
+    position: relative;
+    right:50px  
+  }  
 }
+
 
 @media only screen and  (max-width:1450px){
   .container {
-    display:none;
-   }
+    zoom:20%;
+    }
+    .table {
+      width: 150vw;
+      height: 77vh;
+    }
 }
 
 @media only screen and  (max-width:1180px){
@@ -256,5 +263,29 @@
   .hero-action {
     font-size: 30px;
   }
+ 
+}
 
+@media only screen and  (max-width:992px){
+  .container {
+    display:none
+  }
+  .catLinks{
+    position:relative;
+    left:50px;
+  }
+}
+
+@media only screen and  (max-width:925px){
+  .username-lg {
+    font-size: 30px;
+  }
+  .hide-mob-2{
+    display:none;
+  }
+  
+  .catLinks{
+    top: 150px;
+    left:100px;
+  }
 }

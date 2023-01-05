@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root{
-  --cat-color: #ffffff;
+  --cat-color: #000000;
 }
+
+
 
 .no_highlights{
   -webkit-tap-highlight-color: transparent;
@@ -53,7 +55,7 @@ canvas {
   float: right;
   font-size: 40px;
   transition: color 0.7s linear;    
-  opacity:0.8
+  
 }
 
 #action, #mob-action{
@@ -63,7 +65,7 @@ canvas {
 }
 
 .hero-action:hover{
-  opacity:1;
+  
 }
 
 .social-url-wrapper {
@@ -71,7 +73,7 @@ canvas {
 }
 
 .social-media-icon {
-  font-size: 60px;
+  font-size: 44px;
   text-align: center;
   color: transparent;
   transition: color 0.7s linear;
@@ -79,7 +81,7 @@ canvas {
 }
 
 .social-media-icon:hover {
-  background: #3d3737bb;
+  background: rgba(61, 55, 55, 0.333);
   border-radius: 10px;
   color: white !important;
   transform: scale(1.2);
@@ -88,7 +90,7 @@ canvas {
 
 .fs-35 {
   font-size: 18px;
-  color: #000;
+  color: rgb(255, 255, 255);
   transition: 0.5s linear;
   font-family: 'Poppins', sans-serif;
 }
@@ -111,7 +113,7 @@ canvas {
 
 .preloader {
   align-items: center;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -188,13 +190,6 @@ a{
   font-size:16px;
 }
 
-.github-block{
-  opacity: 0.8;
-}
-
-.github-block:hover{
-  opacity: 1;
-}
 
 /*
 

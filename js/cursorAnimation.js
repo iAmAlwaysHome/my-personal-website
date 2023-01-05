@@ -79,11 +79,18 @@ startAnimation = () => {
 };
 
 function rand() {
-	rgbRand = {
-		r: Math.random() * 255,
-		g: Math.random() * 255,
-		b: Math.random() * 255
-	};
+	
+	let luma = 220;
+	
+	while ( luma > 150)
+	{
+		rgbRand = {
+			r: Math.random() * 255,
+			g: Math.random() * 255,
+			b: Math.random() * 255
+		};
+		luma =((rgbRand.r* 299) + (rgbRand.g* 587) + (rgbRand.b * 114)) / 1000; // per ITU-R BT.709
+	}
 	
 	//console.log(getComputedStyle(document.querySelector(":root")).getPropertyValue('--text-color'));
 	//document.documentElement.style.setProperty = ('--text-color',`black`);	

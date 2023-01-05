@@ -30,7 +30,7 @@ function crazyCat(){
 	
 	setTimeout(() => {
 		down();
-	  }, "400")
+	  }, "500")
 	
 	setTimeout(() => {
 		up();
