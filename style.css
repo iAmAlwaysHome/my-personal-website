@@ -203,3 +203,58 @@
     transform: scaley(1);
   }
 }
+
+/*
+
+@media only screen and  (max-width:1660px){
+  .username-lg {
+    font-size: 65px;
+  }
+  .hero-action {
+    font-size: 40px;
+  }
+  .fs-35 {
+    font-size: 18px;
+  }
+  .nav-link{
+    font-size: 22px !important;
+  }
+  .latest-link, .text-muted {
+    font-size: 14px ;  
+  }
+  #lat-fol-link{
+    font-size:16px;
+  }
+  .social-media-icon {
+    font-size: 40px;   
+  }  
+}
+*/
+
+
+@media only screen and  (max-width:1800px){
+  .container {
+   zoom:30%; 
+  }
+}
+
+@media only screen and  (max-width:1700px){
+  .table {
+    width: 100vw;
+    height: 57vh;
+  }
+}
+
+@media only screen and  (max-width:1450px){
+  .container {
+    display:none;
+   }
+}
+
+@media only screen and  (max-width:1180px){
+
+  .hero-action {
+    font-size: 30px;
+  }
+
+}

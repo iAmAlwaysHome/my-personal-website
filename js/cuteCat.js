@@ -30,7 +30,7 @@ function crazyCat(){
 	
 	setTimeout(() => {
 		down();
-	  }, "300")
+	  }, "400")
 	
 	setTimeout(() => {
 		up();
@@ -50,3 +50,5 @@ $("#cat-activate").hover(function() {
  }, function() {
 	$(this).down();
  });*/
+ 
+ 
