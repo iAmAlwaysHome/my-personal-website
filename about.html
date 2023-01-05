@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,12 +22,10 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   
   <div class="preloader"> <img src="/src/preload.svg" alt="preloader animation"> </div> 
-  <canvas id="canvas" class="canvas" width="1280px" height="800px"></canvas> 
+  
   <div id="all">   
     
     <div id="app">      
-      
-      
       
       <div class="container-fluid"> 
          
@@ -35,7 +34,7 @@
         <div class="col-9"></div>
         <div class="col-3">
         <nav class="navbar navbar-expand-lg navbar-dark .bg-transparent">
-          <a class="navbar-brand" href="/"><i class="fa-solid fa-house social-media-icon" style="font-size:14px; position:  relative; left:10px; bottom: 3px;"></i></a>
+          <a class="navbar-brand" href="/index.html"><i class="fa-solid fa-house social-media-icon" style="font-size:14px; position:  relative; left:10px; bottom: 3px;"></i></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -143,11 +142,12 @@
   
   
   
- 
+  <canvas id="canvas" class="canvas" width="1280px" height="800px"></canvas> 
   
-  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-  <script src="src/index.js"></script>
-  
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script> 
+  <script src="/js/getGithubData.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/cursorAnimation.js"></script>
   
 </body>
 </html>
