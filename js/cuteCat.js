@@ -25,12 +25,16 @@ document.addEventListener("mouseup", up);
 
 function down(){
   pawsup.classList.add("hide");
+  pawsup2.classList.add("hide2");
   pawsdown.classList.remove("hide");
+  pawsdown2.classList.remove("hide2");
 }
 
 function up(){
   pawsup.classList.remove("hide");
+  pawsup2.classList.remove("hide2");
   pawsdown.classList.add("hide");
+  pawsdown2.classList.add("hide2");
 }
 
 function crazyCat(){
