@@ -90,34 +90,13 @@ function rand() {
 			b: Math.random() * 255
 		};
 		luma =((rgbRand.r* 299) + (rgbRand.g* 587) + (rgbRand.b * 114)) / 1000; // per ITU-R BT.709
-	}
-	
-	//console.log(getComputedStyle(document.querySelector(":root")).getPropertyValue('--text-color'));
-	//document.documentElement.style.setProperty = ('--text-color',`black`);	
-   //console.log(getComputedStyle(document.querySelector(":root")).getPropertyValue('--text-color'));
-   document.documentElement.style.setProperty(`--cat-color`, `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`);
+	}	
 
-	document.querySelector(".username-lg").style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
-	document.querySelector(".w-100").style.background = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
-	document.querySelector(".hero-action").style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
-	document.querySelector("#mob-action").style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
-	document.querySelector(".hero-name").style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
+   document.documentElement.style.setProperty(`--generated-color`, `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`);		
 	
-	let u =document.querySelectorAll('.myunderline');
-	for (let i = 0; i < u.length; i++) {
-		u[i].style.borderBottom = `1px solid rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
-	}
-	let d = document.querySelectorAll(".social-media-icon");
-	for (let i = 0; i < d.length; i++) {
-		d[i].style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
-	}
-	let t = document.querySelectorAll(".fs-35");
-	for (let i = 0; i < t.length; i++) {
-		t[i].style.color = `rgb(${rgbRand.r},${rgbRand.g},${rgbRand.b}`;
-		}
 	setTimeout(() => {
 		rand();
-	}, 5000);
+	}, 1800);
 }
 
 function randomInteger(min, max) {

@@ -39,7 +39,7 @@ async function get_latest_repo() {
 	let response = await axios.get('https://api.github.com/users/iAmAlwaysHome/repos?sort=created&per_page=1');
 	response = response.data[0];	
 	document.querySelector("#lat-repo-date").innerHTML=convert_time(response['created_at']);
-	document.querySelector("#lat-repo-wrapper").innerHTML=`<a  href="${response['html_url']}" class="ff-pop latest-link" > ${response['name']}/ </a>`;
+	document.querySelector("#lat-repo-wrapper").innerHTML=`<a  href="${response['html_url']}" target="_blank"  class="ff-pop latest-link" > ${response['name']}/ </a>`;
 
 }
 
@@ -55,7 +55,7 @@ async function get_latest_commit() {
 	let date = responseCom.commit.committer.date; 
 	
 	document.querySelector("#lat-com-date").innerHTML=convert_time(date);				
-	document.querySelector("#lat-com-wrapper").innerHTML=`<a  href="${url}" class="ff-pop latest-link hide-mob" > ${msg} </a>`;		
+	document.querySelector("#lat-com-wrapper").innerHTML=`<a  href="${url}" target="_blank"  class="ff-pop latest-link hide-mob" > ${msg} </a>`;		
 }
 
 
@@ -69,6 +69,6 @@ async function get_latest_follower() {
 	let response = await axios.get('https://api.github.com/users/iAmAlwaysHome/followers?per_page=1&page=' + followers_count.toString());
 	response = response.data[0];
 	
-	document.querySelector("#lat-fol-link-wrapper").innerHTML=` <a id="lat-fol-link" href="${response['html_url']}" class="ff-pop latest-link"><img width="14" height="14" src="${response['avatar_url']}" class="rounded-circle border"> ${response['login']}</a>`;
+	document.querySelector("#lat-fol-link-wrapper").innerHTML=` <a id="lat-fol-link" href="${response['html_url']}" target="_blank" class="ff-pop latest-link"><img width="25" height="25" src="${response['avatar_url']}" class="rounded-circle border"> ${response['login']}</a>`;
 } 
 

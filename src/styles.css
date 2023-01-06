@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root{
-  --cat-color: #000000;
+  --generated-color: #000000;
 }
-
-
 
 .no_highlights{
   -webkit-tap-highlight-color: transparent;
@@ -15,8 +13,12 @@
   -ms-user-select: none;
   user-select: none;
 }
+
 body {  
-  background-color: rgb(255, 255, 255) !important;
+  background-color: #eeecec !important;
+  font-family: 'Poppins', sans-serif;
+  color: black; 
+  
 }
 
 ::-webkit-scrollbar {
@@ -43,62 +45,106 @@ canvas {
   background: rgb(255, 255, 255);
 }
 
-.username-lg {
-  font-family: 'Poppins', sans-serif;
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.username-lg, .hero-name{
+  font-weight: 400; 
+  -webkit-text-stroke: 0.5px #eeecec  !important;  
+  transition: color 0.7s linear;  
+  transform: scale(.97, 1)
+}
+
+
+.username-lg {  
   font-size: 65px;
-  color: rgb(255, 255, 255);
-  transition: color 0.7s linear; 
+ 
+}
+
+.hero-name{  
+  
+  text-decoration: underline;
+  text-decoration-thickness: 3.5px; 
+  -webkit-text-stroke: 0px !important;  
+  text-underline-offset: 14px;
+  
+}
+
+.hero-name:hover{
+  cursor:pointer; 
 }
 
 .hero-action {
-  font-family: 'Poppins', sans-serif;
   float: right;
-  font-size: 40px;
-  transition: color 0.7s linear;    
-  
+  font-size: 50px;
 }
+
+#action:hover {
+   zoom:105%;
+}
+
 
 #action, #mob-action{
   text-decoration: underline;
   text-decoration-thickness: 1.5px; 
   text-underline-position: under;
-}
-
-.hero-action:hover{
-  
+  color: var(--generated-color); 
 }
 
 .social-url-wrapper {
   text-decoration: none;
 }
 
-.social-media-icon {
-  font-size: 44px;
-  text-align: center;
-  color: transparent;
-  transition: color 0.7s linear;
- 
-}
-
-.social-media-icon:hover {
-  background: rgba(61, 55, 55, 0.333);
-  border-radius: 10px;
-  color: white !important;
-  transform: scale(1.2);
-  transition: 0.2s ease-in-out;
-}
-
 .fs-35 {
-  font-size: 18px;
-  color: rgb(255, 255, 255);
+  font-size: 20px;
   transition: 0.5s linear;
-  font-family: 'Poppins', sans-serif;
 }
 
 .w-100.mt-5 {
-  background: #34e89e;
   height: 2px;
   transition: 0.5s linear;
+}
+
+.nav-link{
+  font-size: 22px !important;
+}
+
+.navbar{
+  position:relative;
+  top:40px;
+}
+
+.hero-action{
+  color: var(--generated-color); 
+}
+
+.hero-action:hover, .nav-item a:hover:after {
+  cursor:pointer !important;
+  
+}
+.nav-item a:hover  {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.latest-link, .text-muted {
+  font-size: 17px ;  
+  display: inline;
+}
+
+.text-muted {
+  opacity:0.9
+}
+
+.latest-link:hover{
+  text-decoration: underline;
+}
+
+#mob-action-link{
+  position:relative;
+  left:400px;
 }
 
 #app {
@@ -133,101 +179,27 @@ canvas#canvas {
   left: 0;
   height: auto;
   width: 100vw;
-}
-
-
-
-a{
-  text-decoration: none;
-}
-
-.hero-name{
-  
-  text-decoration: underline;
-  text-decoration-thickness: 3px; 
-  text-underline-position: under;
-  transition: color 0.7s linear;
-}
-
-.hero-name:hover{
-  cursor:pointer;
- 
-}
-
-.nav-link{
-  font-size: 22px !important;
-}
-
-.navbar{
-  position:relative;
-  top:40px;
-}
-
-.hero-action:hover, .nav-item a:hover:after {
-  cursor:pointer !important;
-  
-}
-.nav-item a:hover  {
-  text-decoration: underline;
-  text-underline-offset: 8px;
-}
-
-.latest-link, .text-muted {
-  font-size: 14px ;  
-  display: inline;
-  color: var(--cat-color) !important;
-}
-
-.text-muted {
-  opacity:0.6
-}
-
-.latest-link:hover{
-  text-decoration: underline;
-}
-
-#lat-fol-link{
-  font-size:16px;
-}
-
-
-/*
-
-@media only screen and  (max-width:1660px){
-  .username-lg {
-    font-size: 65px;
-  }
-  .hero-action {
-    font-size: 40px;
-  }
-  .fs-35 {
-    font-size: 18px;
-  }
-  .nav-link{
-    font-size: 22px !important;
-  }
-  .latest-link, .text-muted {
-    font-size: 14px ;  
-  }
-  #lat-fol-link{
-    font-size:16px;
-  }
-  .social-media-icon {
-    font-size: 40px;   
-  }  
-}
-*/
+} 
 
 .display-mob{
   display: none;
 }
 
+
+.hero-about{
+  font-size: 20px;
+}
+
+.username-lg{
+  
+}
+
 @media only screen and  (max-width:1660px){
-  .username-lg {
-    font-size: 46px;
+  .username-lg, .hero-name {
+    font-size: 56px;
   }
   .hero-action {
-    font-size: 33px;
+    font-size: 43px;
   }
   .nav-link{
     position:relative;
@@ -235,22 +207,38 @@ a{
   }
 }
 
-@media only screen and  (max-width:1180px){
-  .username-lg {
-    font-size: 36px;
+@media only screen and  (max-width:1400px){
+  .username-lg, .hero-name {
+    font-size: 48px;
+  }
+  .hero-name{  
+    text-decoration-thickness: 2.5px; 
+    text-underline-offset: 10px;
   }
   .hero-action {
-    font-size: 20px;
+    font-size: 33px;
   }
-  .nav-link{
-    position:relative;
-    right:150px;
+}
+
+@media only screen and  (max-width:1199px){
+  .username-lg, .hero-name {
+    font-size: 38px;
+  }
+  .hero-name{  
+    text-decoration-thickness: 1.5px; 
+    text-underline-offset: 8px;
+  }
+  .hero-action {
+    font-size: 30px;
   }
   .latest-link, .text-muted, #lat-fol-link {
-    font-size: 12px ;  
+    font-size: 14px ;  
   }
-  .fs-35 {
-    font-size: 14px;
+   .fs-35  {
+    font-size: 16px ; 
+   }
+   .nav-link{
+    right:140px;
   }
 }
 
@@ -265,29 +253,71 @@ a{
   }
   
   .display-mob{
-    display:inline;
+    display:block;
   }
   
-  
+  .latest-link, .text-muted, #lat-fol-link {
+    font-size: 12px ;  
+  }
+   .fs-35  {
+    font-size: 13px ; 
+   }
 }
 
-@media only screen and  (max-width:925px){
-  .username-lg {
-    font-size: 28px;
+@media only screen and  (max-width:940px){
+  .username-lg, .hero-name {
+    font-size: 32px;
+  }
+  .latest-link, .text-muted, #lat-fol-link {
+    font-size: 11px ;  
+  }
+   .fs-35  {
+    font-size: 12px ; 
+   }
+}
+
+@media only screen and  (max-width:767px){
+  .username-lg, .hero-name {
+    font-size: 28px ;
   }
   .hide-mob-2{
-    display:none;
+    zoom:70%
+  } 
+  .hero-name{  
+    text-decoration-thickness: 1.2px; 
+    text-underline-offset: 6px;
   }
   
-  .herosection{
-    position:relative;
-    bottom: 300px;
+  #mob-action-link{
+    left:300px;
+  }
+
+}
+
+@media only screen and  (max-width:576px){
+  .username-lg, .hero-name {
+    font-size: 20px ;
+  }
+  .hide-mob-2{
+    zoom:70%
+  } 
+  
+  #mob-action-link{
+    left:0px;
+  }
+  .hide-mob-2{
+    display: none;
   }
 }
 
-@media only screen and  (max-width:768px){
-  .username-lg {
-    font-size: 20px;
-  }
-}
-
+/*
+<h1 class="username-lg hero-about"  >
+                      <span class="hero-text-line">Hello, my name is Evelina-Svitlana Protsenko but you can call me Lina.  </span><br><br>
+                      <span class="hero-text-line">I'm new to Switzerland and looking for an entry-level position in software development. </span><br><br>
+                      <span class="hero-text-line">I had the chance to study math, programming and gamedesign in Kiev, Moscow and St Andrews.<br> I also attended Y Combinator startup school back in 2019.</span><br><br>   
+                      <span class="hero-text-line">Amongst too many things I'm curious about, I'm passionate about technology, entrepreneurship, innovation, and the internet. </span><br><br>
+                      <span class="hero-text-line">I love travelling and learning new things.</span><br><br>
+                    
+                      <a class=" display-mob"  href="/contact.html"> <span id="mob-action">Hire me</span>  😇</a>                 
+                    </h1>
+*/
