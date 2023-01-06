@@ -16,6 +16,13 @@ let pawsdown = document.querySelector(".paws.down");
 document.addEventListener("mousedown", down);
 document.addEventListener("mouseup", up);
 
+let pawsup2 = document.querySelector(".paws2.up2");
+let pawsdown2 = document.querySelector(".paws2.down2");
+
+document.addEventListener("mousedown", down);
+document.addEventListener("mouseup", up);
+
+
 function down(){
   pawsup.classList.add("hide");
   pawsdown.classList.remove("hide");
@@ -42,6 +49,12 @@ document.querySelector("#cat-activate").addEventListener("mouseover", crazyCat);
 let icons = document.querySelectorAll(".social-media-icon");
 for (let i = 0; i < icons.length; ++i) {
 	icons[i].addEventListener("mouseover", crazyCat);
+}
+
+document.querySelector("#catactivate2").addEventListener("mouseover", crazyCat);
+let icons2 = document.querySelectorAll(".socialmediaicon2");
+for (let i = 0; i < icons2.length; ++i) {
+	icons2[i].addEventListener("mouseover", crazyCat);
 }
 
 /*
