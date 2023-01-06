@@ -40,7 +40,8 @@ async function get_latest_repo() {
 	response = response.data[0];	
 	document.querySelector("#lat-repo-date").innerHTML=convert_time(response['created_at']);
 	document.querySelector("#lat-repo-wrapper").innerHTML=`<a  href="${response['html_url']}" target="_blank"  class="ff-pop latest-link" > ${response['name']}/ </a>`;
-
+	document.querySelector("#latrepodate2").innerHTML=convert_time(response['created_at']);
+	document.querySelector("#latrepowrapper2").innerHTML=`<a  href="${response['html_url']}" target="_blank"  class="ff-pop latest-link" > ${response['name']}/ </a>`;
 }
 
 async function get_latest_commit() {
@@ -55,7 +56,9 @@ async function get_latest_commit() {
 	let date = responseCom.commit.committer.date; 
 	
 	document.querySelector("#lat-com-date").innerHTML=convert_time(date);				
-	document.querySelector("#lat-com-wrapper").innerHTML=`<a  href="${url}" target="_blank"  class="ff-pop latest-link hide-mob" > ${msg} </a>`;		
+	document.querySelector("#lat-com-wrapper").innerHTML=`<a  href="${url}" target="_blank"  class="ff-pop latest-link " > ${msg} </a>`;	
+	document.querySelector("#latcomdate2").innerHTML=convert_time(date);				
+	document.querySelector("#latcomwrapper2").innerHTML=`<a  href="${url}" target="_blank"  class="ff-pop latest-link " > ${msg} </a>`;	
 }
 
 

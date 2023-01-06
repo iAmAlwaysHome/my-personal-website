@@ -380,16 +380,18 @@
     }
     .container {
       zoom:20%;
-      left: 20%;
+      left: 15%;
       top: 75%; 
     }
     .middle-content{
 
       bottom:200px;
     }
+
     .table {
-      width: 670vw;
+      width: 200vw;
     }
+    
     .social-media-icon {
       font-size: 24px;
     }

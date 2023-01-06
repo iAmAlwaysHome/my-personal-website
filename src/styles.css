@@ -181,7 +181,7 @@ canvas#canvas {
   width: 100vw;
 } 
 
-.display-mob, .hero-phones{
+.display-mob, .hero-phones, .github-phones{
   display: none;
 }
 
@@ -308,7 +308,7 @@ canvas#canvas {
   .display-mob{
     display: none;
   }
-  .hero-phones{
+  .hero-phones, .github-phones{
     display:block;
   
   }
@@ -319,20 +319,30 @@ canvas#canvas {
  
   #mob-action-link2{
     font-size: 28px;
-    position:relative;
-    top:30px;
   }  
   .username-lg, .hero-name{
     font-size: 22px;
+    -webkit-text-stroke: 0.2px #eeecec  !important;  
+    
   }
  .herosection{
   position: relative;
   left:25px;
  }
  .burger{
-  position: relative;
- 
+  position: relative; 
  }
+ 
+ .github-phones{
+  zoom:70%
+ }
+ 
+}
+
+@media only screen and  (max-width:319px){
+  html{
+    zoom:70%
+  }
 }
 
 /*
