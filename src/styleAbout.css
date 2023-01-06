@@ -10,3 +10,160 @@
     color: var(--generated-color); 
     -webkit-text-stroke: none  !important;  
 }
+
+.hero-name{  
+  
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
+    -webkit-text-stroke: 0px !important;  
+    text-underline-offset: 8px;
+    
+  }
+  
+  .hero-name:hover{
+    cursor:pointer; 
+    color: var(--generated-color); 
+  }
+  
+  .hero-text-desktop, .hero-action{
+    position: relative;
+    bottom: 50px;
+  }
+  
+ 
+  #mob-action{
+    position: relative;
+    right:350px;
+  }
+  
+
+@media only screen and  (max-width:1660px){
+    .username-lg, .hero-name {
+      font-size: 21px;
+    }
+  }
+  
+
+  @media only screen and  (max-width:1400px){
+    .username-lg, .hero-name {
+      font-size: 18px;
+    }
+    .hero-name{  
+      text-decoration-thickness: 0.7px; 
+      text-underline-offset: 8px;
+    }
+    #action {
+      font-size: 26px;
+    }
+    .hero-text-desktop, .hero-action{
+        bottom: 30px;
+      }
+  }
+  
+  
+  @media only screen and  (max-width:1199px){
+    .username-lg, .hero-name {
+      font-size: 14px;
+    }
+    .hero-name{  
+      text-decoration-thickness: 0.5px; 
+      text-underline-offset: 6px;
+    }
+    .hero-action {
+      font-size: 30px;
+    }
+   
+  }
+
+  
+  @media only screen and  (max-width:900px){
+    .username-lg, .hero-name {
+        font-size: 12px;
+      }
+      #mob-action {
+        font-size: 14px;
+      }
+  }
+
+  @media only screen and  (max-width:767px){
+    .username-lg, .hero-name {
+      font-size: 9.5px ;
+    }
+
+    .hero-name{  
+      text-decoration-thickness: 0.1px; 
+      text-underline-offset: 4px;
+    }
+    
+    #mob-action-link{
+      left:355px;
+    }
+    .hero-text-mobile{
+        position:relative;
+        top: 10px !important;
+      }
+          .hero-action {
+      font-size: 30px;
+    }
+    #mob-action {
+        font-size: 12px;
+      }
+    
+  
+  }
+     
+  @media only screen and  (max-width:576px){
+    .username-lg, .hero-name {
+      font-size: 7px ;
+    }
+    
+    #mob-action-link{
+      left:340px;
+    }
+    .hide-mob-2{
+      display: none;
+    }
+    #mob-action {
+        font-size: 9px;
+      }
+  }
+  
+  @media only screen and  (max-width:420px){
+    .display-mob{
+      display: none;
+    }
+    .hero-phones, .github-phones{
+      display:block;
+    
+    }
+    #mob-action2{
+      color: var(--generated-color) !important; 
+  
+    }
+   
+    #mob-action-link2{
+      font-size: 11px;
+    }  
+    .username-lg, .hero-name{
+      font-size: 6.5px;
+      -webkit-text-stroke: none #eeecec  !important;  
+      
+    }
+   .herosection{
+    position: relative;
+    left:10px;
+   }
+   .burger{
+    position: relative; 
+   }
+   
+   .github-phones{
+    zoom:70%
+   }
+   
+   #mob-action-link2{
+    position:relative;
+    top:10px;
+  }
+   
+  }

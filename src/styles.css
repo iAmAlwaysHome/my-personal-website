@@ -205,6 +205,8 @@ canvas#canvas {
   }
 }
 
+
+
 @media only screen and  (max-width:1400px){
   .username-lg, .hero-name {
     font-size: 48px;
@@ -345,15 +347,3 @@ canvas#canvas {
     zoom:70%
   }
 }
-
-/*
-<h1 class="username-lg hero-about"  >
-        <span class="hero-text-line">  </span><br><br>
-        <span class="hero-text-line"> </span><br><br>
-        <span class="hero-text-line"></span><br><br>   
-        <span class="hero-text-line">Amongst too many things I'm curious about, I'm passionate about technology, entrepreneurship, innovation, and the internet. </span><br><br>
-        <span class="hero-text-line">I love travelling and learning new things.</span><br><br>
-      
-        <a class=" display-mob"  href="/contact.html"> <span id="mob-action">Hire me</span>  😇</a>                 
-      </h1>
-*/
