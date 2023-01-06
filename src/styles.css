@@ -86,7 +86,7 @@ a{
 }
 
 
-#action, #mob-action{
+#action, #mob-action, #mob-action2{
   text-decoration: underline;
   text-decoration-thickness: 1.5px; 
   text-underline-position: under;
@@ -181,7 +181,7 @@ canvas#canvas {
   width: 100vw;
 } 
 
-.display-mob{
+.display-mob, .hero-phones{
   display: none;
 }
 
@@ -190,9 +190,6 @@ canvas#canvas {
   font-size: 20px;
 }
 
-.username-lg{
-  
-}
 
 @media only screen and  (max-width:1660px){
   .username-lg, .hero-name {
@@ -298,9 +295,6 @@ canvas#canvas {
   .username-lg, .hero-name {
     font-size: 20px ;
   }
-  .hide-mob-2{
-    zoom:70%
-  } 
   
   #mob-action-link{
     left:0px;
@@ -308,6 +302,37 @@ canvas#canvas {
   .hide-mob-2{
     display: none;
   }
+}
+
+@media only screen and  (max-width:420px){
+  .display-mob{
+    display: none;
+  }
+  .hero-phones{
+    display:block;
+  
+  }
+  #mob-action2{
+    color: var(--generated-color) !important; 
+
+  }
+ 
+  #mob-action-link2{
+    font-size: 28px;
+    position:relative;
+    top:30px;
+  }  
+  .username-lg, .hero-name{
+    font-size: 22px;
+  }
+ .herosection{
+  position: relative;
+  left:25px;
+ }
+ .burger{
+  position: relative;
+ 
+ }
 }
 
 /*
