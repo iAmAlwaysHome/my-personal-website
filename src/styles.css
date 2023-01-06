@@ -74,6 +74,7 @@ a{
 
 .hero-name:hover{
   cursor:pointer; 
+  color: var(--generated-color); 
 }
 
 .hero-action {
@@ -347,12 +348,12 @@ canvas#canvas {
 
 /*
 <h1 class="username-lg hero-about"  >
-                      <span class="hero-text-line">Hello, my name is Evelina-Svitlana Protsenko but you can call me Lina.  </span><br><br>
-                      <span class="hero-text-line">I'm new to Switzerland and looking for an entry-level position in software development. </span><br><br>
-                      <span class="hero-text-line">I had the chance to study math, programming and gamedesign in Kiev, Moscow and St Andrews.<br> I also attended Y Combinator startup school back in 2019.</span><br><br>   
-                      <span class="hero-text-line">Amongst too many things I'm curious about, I'm passionate about technology, entrepreneurship, innovation, and the internet. </span><br><br>
-                      <span class="hero-text-line">I love travelling and learning new things.</span><br><br>
-                    
-                      <a class=" display-mob"  href="/contact.html"> <span id="mob-action">Hire me</span>  😇</a>                 
-                    </h1>
+        <span class="hero-text-line">  </span><br><br>
+        <span class="hero-text-line"> </span><br><br>
+        <span class="hero-text-line"></span><br><br>   
+        <span class="hero-text-line">Amongst too many things I'm curious about, I'm passionate about technology, entrepreneurship, innovation, and the internet. </span><br><br>
+        <span class="hero-text-line">I love travelling and learning new things.</span><br><br>
+      
+        <a class=" display-mob"  href="/contact.html"> <span id="mob-action">Hire me</span>  😇</a>                 
+      </h1>
 */

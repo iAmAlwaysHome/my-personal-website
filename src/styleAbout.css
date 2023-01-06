@@ -1,0 +1,12 @@
+.username-lg{
+    font-size:24px;
+}
+
+#action{
+    font-size:38px;
+}
+
+.highlight:hover{
+    color: var(--generated-color); 
+    -webkit-text-stroke: none  !important;  
+}
