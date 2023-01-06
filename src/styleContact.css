@@ -411,5 +411,7 @@
       bottom: 100px;
     }
     
-  
+    .paws, .paws2 {
+      left: 115%;
+    }
   }

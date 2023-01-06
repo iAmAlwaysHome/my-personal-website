@@ -4,12 +4,17 @@
 
 #action{
     font-size:38px;
+    
 }
 
 .highlight:hover{
     color: var(--generated-color); 
     -webkit-text-stroke: none  !important;  
 }
+
+#action:hover {
+    zoom:100.7%;
+ }
 
 .hero-name{  
   
@@ -36,6 +41,11 @@
     right:350px;
   }
   
+  .hero-action{
+    transform: scale(0.95, 1) !important;
+    font-weight: 400;
+    
+  }
 
 @media only screen and  (max-width:1660px){
     .username-lg, .hero-name {

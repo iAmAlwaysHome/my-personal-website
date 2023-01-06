@@ -23,7 +23,9 @@ get_latest_commit();
 get_latest_follower();
 
 document.querySelector("#discord-contact").addEventListener("click", copyDiscord);
+document.querySelector("#discord-contact2").addEventListener("click", copyDiscord);
 document.querySelector("#email-contact").addEventListener("click", copyEmail);
+document.querySelector("#email-contact2").addEventListener("click", copyEmail);
 
 start();
 window.onload = () => fadeEffect;
