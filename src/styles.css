@@ -2,35 +2,23 @@
 
 :root{
   --generated-color: #000000;
-}
+} 
 
-
-
-.no_highlights{
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 body {  
   background-color: #eeecec !important;
   font-family: 'Poppins', sans-serif;
   color: black; 
-  
+  overflow:scroll;
 }
-
-::-webkit-scrollbar {
-  width: 0px;  
-}
+ 
 
 canvas {
   width: 100%;
   height: 100%;
 }
+
+
 
 #all {
   display: flex;
@@ -51,6 +39,18 @@ a{
   color:black;
 }
 
+.navbar-toggler {
+  zoom:60% !important;
+  opacity:80%
+}
+
+.navbar{
+  padding-top: 2em;
+}
+
+.nav-link, .navbar-brand{
+  font-size: 20px;
+}
 
 .username-lg, .hero-name{
   font-weight: 400; 
@@ -111,30 +111,9 @@ a{
   transition: 0.5s linear;
 }
 
-.nav-link{
-  font-size: 16px !important;
-}
-
-.navbar{
-  position:relative;
-  top:40px;
-}
-
-.hero-action{
-  color: var(--generated-color); 
-}
-
-.hero-action:hover, .nav-item a:hover:after {
-  cursor:pointer !important;
-  
-}
-.nav-item a:hover  {
-  text-decoration: underline;
-  text-underline-offset: 8px;
-}
 
 .latest-link, .text-muted {
-  font-size: 11px ;  
+  font-size: 12px ;  
   display: inline;
 }
 
@@ -195,6 +174,11 @@ canvas#canvas {
 }
 
 
+.offcanvas-body{
+  display: flex;
+  align-items: center;
+}
+
 @media only screen and  (max-width:1660px){
   .username-lg, .hero-name {
     font-size: 56px;
@@ -202,10 +186,11 @@ canvas#canvas {
   .hero-action {
     font-size: 20px;
   }
-  .nav-link{
-    position:relative;
-    right:100px;
+  
+  .nav-link, .navbar-brand{
+    font-size: 18px;
   }
+ 
 }
 
 
@@ -238,8 +223,9 @@ canvas#canvas {
    .fs-35  {
     font-size: 11px ; 
    }
-   .nav-link{
-    right:140px;
+ 
+   .nav-link, .navbar-brand{
+    font-size: 16px;
   }
 }
 
@@ -264,6 +250,10 @@ canvas#canvas {
     font-size: 16px;
 
    }
+   
+   .nav-link, .navbar-brand{
+    font-size: 16px;
+  }
 
 }
 
@@ -354,10 +344,21 @@ canvas#canvas {
  .github-phones{
   zoom:90%
  }
+ 
+ .nav-link, .navbar-brand{
+  font-size: 14px;
 }
+
+
+}
+
+
+
 
 @media only screen and  (max-width:319px){
   html{
     zoom:70%
   }
 }
+
+
