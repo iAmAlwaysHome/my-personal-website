@@ -7,17 +7,12 @@
   -ms-user-select: none;
   user-select: none;
 }
-
 #action, #mob-action, #mob-action2 {
-
-  color: var(--generated-color); 
+  color: var(--generated-color);
 }
-
-
 .hide, .hide2 {
   display: none;
 }
-
 .container, .container2 {
   zoom:40%;
   width: 80rem;
@@ -26,12 +21,10 @@
   top: 50%;
   left: 20%;
   transform: translate(-50%, -50%);
-  
 }
-.container *,  .container2 *{
+.container *, .container2 *{
   position: absolute;
 }
-
 .table, .table2 {
   width: 85vw;
   height: 57vh;
@@ -42,7 +35,6 @@
   transform-origin: 50% 0%;
   transform: translatex(-50%) rotate(15deg);
 }
-
 .cat, .cat2 {
   transform: rotate(15deg);
   top: 15rem;
@@ -74,7 +66,7 @@
   top: 1.7rem;
   left: -0.5rem;
 }
-.cat .ears.outline .ear:first-child, .cat2 .ears2.outline2 .ear2:first-child  {
+.cat .ears.outline .ear:first-child, .cat2 .ears2.outline2 .ear2:first-child {
   border-bottom: 8rem solid var(--generated-color);
   border-left: 7rem solid transparent;
   border-right: 7rem solid transparent;
@@ -86,7 +78,7 @@
   border-right: 9rem solid transparent;
   transform: translate(53rem, -2rem) rotate(33deg);
 }
-.cat .face, .cat2 .face2  {
+.cat .face, .cat2 .face2 {
   width: 70rem;
   top: 20rem;
   left: 17rem;
@@ -99,7 +91,7 @@
   border-radius: 50%;
   background: var(--generated-color);
 }
-.cat .face .eyes .eye:first-child, .cat2 .face2 .eyes2 .eye2:first-child  {
+.cat .face .eyes .eye:first-child, .cat2 .face2 .eyes2 .eye2:first-child {
   margin-right: 20rem;
 }
 .cat .face .mouth, .cat2 .face2 .mouth2 {
@@ -109,19 +101,18 @@
 .cat .face .mouth .uu, .cat2 .face2 .mouth2 .uu2{
   position: relative;
 }
-.cat .face .mouth .uu::before, .cat .face .mouth .uu::after, .cat2 .face2 .mouth2 .uu2::before, .cat2 .face2 .mouth2 .uu2::after  {
+.cat .face .mouth .uu::before, .cat .face .mouth .uu::after, .cat2 .face2 .mouth2 .uu2::before, .cat2 .face2 .mouth2 .uu2::after {
   content: "";
   display: inline-block;
   width: 4rem;
   height: 1.5rem;
   border-radius: 0 0 50% 50%/0 0 100% 100%;
-  border:  solid 1rem var(--generated-color);
+  border: solid 1rem var(--generated-color);
   border-top: none;
 }
 .cat .face .mouth .uu::after, .cat2 .face2 .mouth2 .uu2::after {
   margin-left: -0.9rem;
 }
-
 .paws, .paws2 {
   width: 100rem;
   left: 50%;
@@ -129,7 +120,7 @@
   transform-origin: 50% 0%;
   transform: translatex(-50%) rotate(15deg);
 }
-.paws.up .paw, .paws2.up2 .paw2  {
+.paws.up .paw, .paws2.up2 .paw2 {
   transform-origin: 50% 0%;
   transform: rotate(150deg);
   width: 15rem;
@@ -139,8 +130,8 @@
   border-right: 1rem solid var(--generated-color);
   border-radius: 0 0 50% 50%/0 0 70% 70%;
 }
-.paws.up .paw .palm, .paws2.up2 .paw2 .palm2  {
-  background:  var(--generated-color);
+.paws.up .paw .palm, .paws2.up2 .paw2 .palm2 {
+  background: var(--generated-color);
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -148,7 +139,7 @@
   left: 6rem;
 }
 .paws.up .paw .bean , .paws2.up2 .paw2 .bean2 {
-  background:  var(--generated-color);
+  background: var(--generated-color);
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
@@ -196,46 +187,38 @@
 .paws .paw:last-child, .paws2 .paw2:last-child {
   left: 65rem;
 }
-
 .eye, .eye2 {
   animation: blink 5s ease infinite;
 }
-
 @keyframes blink {
   0% {
-    transform: scaley(1);
-  }
+      transform: scaley(1);
+ }
   3% {
-    transform: scaley(0.1);
-  }
+      transform: scaley(0.1);
+ }
   6% {
-    transform: scaley(1);
-  }
+      transform: scaley(1);
+ }
   100% {
-    transform: scaley(1);
-  }
+      transform: scaley(1);
+ }
 }
-
 .social-media-icon {
   font-size: 84px;
   transition: color 0.7s linear;
-  color: var(--generated-color); 
+  color: var(--generated-color);
 }
-
 #action:hover {
   zoom:100%;
 }
-
 #action{
   font-size: 160px;
-  text-decoration:none
+  text-decoration:none 
 }
-
 #action:hover{
-  text-decoration:underline
+  text-decoration:underline 
 }
-
-
 .social-media-icon:hover {
   background: rgba(61, 55, 55, 0.333);
   border-radius: 10px;
@@ -243,194 +226,176 @@
   transform: scale(1.2);
   transition: 0.2s ease-in-out;
 }
-
 .hero-action {
   float: left;
 }
-
 .cat-phones{
   display:none;
 }
-
 .socialmediaicon2 {
-  color: var(--generated-color); 
+  color: var(--generated-color);
 }
-
-@media only screen and  (max-width:1660px){
+.hero-phones{
+  display: flex;
+  align-items: center ;
+}
+@media only screen and (max-width:1660px){
   .container, .container2 {
-    zoom:30%;
-    }
-    #action{
+      zoom:30%;
+ }
+  #action{
       font-size: 120px;
-    }
-    .social-media-icon {
+ }
+  .social-media-icon {
       font-size: 64px;
-    }
-    .table, .table2 {
+ }
+  .table, .table2 {
       width: 100vw;
       height: 77vh;
-    }
-    .middle-content{
+ }
+  .middle-content{
       position:relative;
       bottom:30px;
-    }
-  }
-  
-  @media only screen and  (max-width:1400px){
-    .container, .container2 {
+ }
+}
+@media only screen and (max-width:1400px){
+  .container, .container2 {
       zoom:25%;
       height: 87rem;
-      }
-      #action{
-        font-size: 100px;
-      }
-      .social-media-icon {
-        font-size: 50px;
-      }
-      .table, .table2 {
-        width: 120vw;
-        height: 97vh;
-      }
-  }
-
-  @media only screen and  (max-width:1199px){
-    .container, .container2 {
+ }
+  #action{
+      font-size: 100px;
+ }
+  .social-media-icon {
+      font-size: 50px;
+ }
+  .table, .table2 {
+      width: 120vw;
+      height: 97vh;
+ }
+}
+@media only screen and (max-width:1199px){
+  .container, .container2 {
       zoom:20%;
       width: 70rem;
       height: 85rem;
       left: 20%;
-      top: 65%; 
-    }
-    .paws, .paws2 {
+      top: 65%;
+ }
+  .paws, .paws2 {
       left: 64%;
       top: 68%;
-    }
-    .table, .table2 {
+ }
+  .table, .table2 {
       width: 150vw;
       height: 127vh;
-    }
-    .social-media-icon {
+ }
+  .social-media-icon {
       font-size: 40px;
-    }
-  }
-  
-  @media only screen and  (max-width:992px){
-    .container, .container2 {
+ }
+}
+@media only screen and (max-width:992px){
+  .container, .container2 {
       zoom:16%;
-    }
-    .paws, .paws2 {
+ }
+  .paws, .paws2 {
       width: 100rem;
       left: 84%;
       top: 68%;
       transform-origin: 50% 0%;
       transform: translatex(-50%) rotate(15deg);
-    }
-    .table, .table2 {
+ }
+  .table, .table2 {
       width: 160vw;
       height: 157vh;
       left: 80%;
-    }
-    .middle-content{
+ }
+  .middle-content{
       bottom:40px;
-    }
-    .social-media-icon {
+ }
+  .social-media-icon {
       font-size: 40px;
-    }
-    #action{
+ }
+  #action{
       font-size: 80px;
-    }
-  }
-  
-  @media only screen and  (max-width:767px){
-    .container {
-
+ }
+}
+@media only screen and (max-width:767px){
+  .container {
       left: 15%;
-
-    }
-    .paws, .paws2 {
+ }
+  .paws, .paws2 {
       width: 100rem;
       left: 110%;
       top: 68%;
       transform-origin: 50% 0%;
       transform: translatex(-50%) rotate(15deg);
-    }
-    .table, .table2 {
+ }
+  .table, .table2 {
       width: 230vw;
       height: 157vh;
       left: 100%;
-    }
-    .middle-content{
+ }
+  .middle-content{
       bottom:50px;
-    }
-    .social-media-icon {
+ }
+  .social-media-icon {
       font-size: 23px;
-    }
-    #action{
+ }
+  #action{
       font-size: 60px;
-    }  
-
-  
-  }
-  
-  @media only screen and  (max-width:576px){
-    .middle-content{
+ }
+}
+@media only screen and (max-width:576px){
+  .middle-content{
       top:5px;
-    }
-    #action{
+ }
+  #action{
       font-size: 40px;
-    }  
-    .social-media-icon {
+ }
+  .social-media-icon {
       font-size: 18px;
-    }
-    .container, .container2 {
+ }
+  .container, .container2 {
       left: 12%;
       width: 30rem;
-    }
-    .table, .table2 {
+ }
+  .table, .table2 {
       width: 270vw;
-    }
-    .paws, .paws2 {
+ }
+  .paws, .paws2 {
       left: 135%;
-    }
-  }
-  
-  @media only screen and  (max-width:420px){
-    .cat-phones-hide{
-      display:none
-    }
-    .cat-phones{
+ }
+}
+@media only screen and (max-width:420px){
+  .cat-phones-hide{
+      display:none 
+ }
+  .cat-phones{
       display:block;
-    }
-   
-    .middle-content{
-
+ }
+  .middle-content{
       bottom:200px;
-    }
-
-    .container2 {
+ }
+  .container2 {
       zoom:20%;
       left: 20%;
-      top: 75%; 
-    }
-    
-    .table2 {
-      width: 390vw;
-    }
-    
-    .socialmediaicon2 {
+      top: 75%;
+ }
+  .table2 {
+      width: 420vw;
+ }
+  .socialmediaicon2 {
       font-size: 40px;
-   
-    }
-    #action2{
+ }
+  #action2{
       font-size: 63px;
-    } 
-    
-    .contact-links-col{
+ }
+  .contact-links-col{
       position:relative;
       bottom: 100px;
-    }
-    
-    .paws, .paws2 {
+ }
+  .paws, .paws2 {
       left: 135%;
-    }
-  }
+ }
+}

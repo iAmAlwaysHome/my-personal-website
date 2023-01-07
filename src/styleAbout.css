@@ -1,215 +1,168 @@
-
-
-.username-lg, .hero-name, .resume{
-    font-weight: 400; 
-    -webkit-text-stroke: 0.25px #eeecec  !important;  
-    transition: color 0.7s linear;  
-    transform: scale(.97, 1);
-    font-size:16px;
-    -webkit-text-stroke: 0px !important;  
-  }
-  
-  #action, #mob-action, #mob-action2, .hero-name{
-    text-decoration: underline;
-    text-decoration-thickness: 1px; 
-    text-underline-offset: 7px;
-    color: black; 
-  }
-
-#action{
-    font-size:16px;
-    text-underline-offset: 4px;
+ .username-lg, .hero-name, .resume{
+     font-weight: 400;
+     -webkit-text-stroke: 0.25px #eeecec !important;
+     transition: color 0.7s linear;
+     transform: scale(.97, 1);
+     font-size:16px;
+     -webkit-text-stroke: 0px !important;
 }
-
-.highlight:hover{
-    color: var(--generated-color); 
-    -webkit-text-stroke: none  !important;  
+ #action, #mob-action, #mob-action2, .hero-name{
+     text-decoration: underline;
+     text-decoration-thickness: 1px;
+     text-underline-offset: 7px;
+     color: black;
 }
-
-#action:hover {
-    zoom:100.7%;
- }
-  
-  .hero-name:hover{
-    cursor:pointer; 
-    color: var(--generated-color); 
-  }
-  
-  .hero-text-desktop, .hero-action{
-    position: relative;
-    bottom: 50px;
-  }
-  
+ #action{
+     font-size:16px;
+     text-underline-offset: 4px;
+}
+ .highlight:hover{
+     color: var(--generated-color);
+     -webkit-text-stroke: none !important;
+}
+ #action:hover {
+     zoom:100.7%;
+}
+ .hero-name:hover{
+     cursor:pointer;
+     color: var(--generated-color);
+}
+ .hero-text-desktop, .hero-action{
+     position: relative;
+     bottom: 50px;
+}
+ #mob-action{
+     position: relative;
+     right:350px;
+}
+ .hero-action{
+     transform: scale(0.95, 1) !important;
+     font-weight: 400;
+}
+ @media only screen and (max-width:1660px){
+     .username-lg, .hero-name, .resume {
+         font-size: 14px;
+    }
+     #action{
+         font-size:14px;
+    }
+}
+ @media only screen and (max-width:1400px){
+     .username-lg, .hero-name, .resume {
+         font-size: 12px;
+    }
+     .hero-name {
+         text-decoration-thickness: 0.7px;
+         text-underline-offset: 8px;
+    }
+     #action {
+         font-size: 12px;
+    }
+     .hero-text-desktop, .hero-action{
+         bottom: 30px;
+    }
+}
+ @media only screen and (max-width:1199px){
+     .username-lg, .hero-name, .resume{
+         font-size: 10px;
+    }
+     .hero-name{
+         text-decoration-thickness: 0.5px;
+         text-underline-offset: 6px;
+    }
+     #action{
+         font-size: 10px;
+         text-decoration-thickness: 0.5px;
+         text-underline-offset: 2px;
+    }
+}
+ @media only screen and (max-width:992px){
+     .username-lg, .hero-name, .resume {
+         font-size: 14px;
+         -webkit-text-stroke: none !important;
+    }
+     #mob-action2 {
+         font-size: 10px;
+         text-decoration-thickness: 0.5px;
+         text-underline-offset: 2px;
+    }
+     .hero-phones{
+         display:block;
+    }
+     .display-mob{
+         display: block;
+    }
+     .herosection{
+         position: relative;
+         right:10px;
+    }
+}
+ @media only screen and (max-width:940px){
+     #mob-action {
+         font-size: 10px;
+    }
+}
+ @media only screen and (max-width:900px){
+     .username-lg, .hero-name, .resume {
+         font-size: 14px;
+    }
+     #mob-action {
+         font-size: 10px;
+    }
+}
+ @media only screen and (max-width:767px){
+     .username-lg, .hero-name, .resume {
+         font-size: 12px ;
+    }
+     #mob-action2 {
+         font-size: 10px;
+    }
+}
+ @media only screen and (max-width:576px){
+     .username-lg, .hero-name , .resume{
+         font-size: 9px !important;
+    }
+     #mob-action-link2{
+         left:0px;
+    }
+     #mob-action2 {
+         font-size: 8px;
+    }
+     .github-phones{
+         display:block;
+         position: relative;
+         top:50px;
+    }
+}
+ @media only screen and (max-width:420px){
+     #mob-action2{
+         position:relative;
+         left:10px;
+    }
+     #mob-action-link2{
+         font-size: 6px !important;
+    }
+     .username-lg, .hero-name, .resume{
+         font-size: 6.5px !important;
+    }
+     .herosection{
+         position: relative;
+         left:10px;
+    }
+     .burger{
+         position: relative;
+    }
+     .github-phones{
+         zoom:70% 
+    }
+     #mob-action-link2{
+         position:relative;
+         top:10px;
+    }
+}
+ @media only screen and (max-width:319px){
+     html{
+         zoom:80% 
+    }
+}
  
-  #mob-action{
-    position: relative;
-    right:350px;
-  }
-  
-  .hero-action{
-    transform: scale(0.95, 1) !important;
-    font-weight: 400;
-      }
-  
- 
-
-@media only screen and  (max-width:1660px){
-    .username-lg, .hero-name, .resume {
-      font-size: 14px;
-    }
-    #action{
-        font-size:14px;
-        
-    }
-  }
-  
-
-  @media only screen and  (max-width:1400px){
-    .username-lg, .hero-name, .resume {
-      font-size: 12px;
-    }
-    .hero-name {  
-      text-decoration-thickness: 0.7px; 
-      text-underline-offset: 8px;
-    }
-    #action {
-      font-size: 12px;
-    }
-    .hero-text-desktop, .hero-action{
-        bottom: 30px; 
-      }
-  }
-  
-  
-  @media only screen and  (max-width:1199px){
-    .username-lg, .hero-name, .resume{
-      font-size: 10px;
-    }
-    .hero-name{  
-      text-decoration-thickness: 0.5px; 
-      text-underline-offset: 6px;
-    }
-    #action{
-      font-size: 10px;
-      text-decoration-thickness: 0.5px; 
-      text-underline-offset: 2px;
-    }
-   
-  }
-
-  @media only screen and  (max-width:992px){
-    .username-lg, .hero-name, .resume {
-        font-size: 14px;
-        -webkit-text-stroke: none   !important; 
-      }
-      #mob-action2 {
-        font-size: 10px;
-        text-decoration-thickness: 0.5px; 
-        text-underline-offset: 2px;
-      }
-      .hero-phones{
-        display:block;      
-      }
-      .display-mob{
-        display: block;
-      }
-      .herosection{
-        position: relative;
-        right:10px;
-       }
-       
-
-
-  }
-  
-  @media only screen and  (max-width:940px){
-    #mob-action {
-        font-size: 10px;
-      }
-  }
-  
-  @media only screen and  (max-width:900px){
-    .username-lg, .hero-name, .resume {
-        font-size: 14px;
-      }
-
-      #mob-action {
-        font-size: 10px;
-      }
-      
-  }
-
-  @media only screen and  (max-width:767px){
-    .username-lg, .hero-name, .resume {
-      font-size: 12px ;
-    } 
-    #mob-action2 {
-        font-size: 10px;
-      }
-   
-  }
-     
-  @media only screen and  (max-width:576px){
-    .username-lg, .hero-name , .resume{
-      font-size: 9px !important;
-    }
-    
-    #mob-action-link2{
-      left:0px;
-    }
-
-    #mob-action2 {
-        font-size: 8px;
-      }
-
-   .github-phones{
-        display:block;
-        position: relative;
-        top:50px;
-      }
-   
-  }
-  
-  @media only screen and  (max-width:420px){
- 
-  
-    #mob-action2{
-       
-      position:relative;
-      left:10px;
-      
-    }
-   
-    #mob-action-link2{
-      font-size: 6px !important; 
-    }  
-    .username-lg, .hero-name, .resume{
-      font-size: 6.5px !important;
-       
-      
-    }
-   .herosection{
-    position: relative;
-    left:10px;
-   }
-   .burger{
-    position: relative; 
-   }
-   
-   .github-phones{
-    zoom:70%
-   }
-   
-   #mob-action-link2{
-    position:relative;
-    top:10px;
-  }
-   
-  }
-
-  @media only screen and  (max-width:319px){
-    html{
-      zoom:80%
-    }
-  }
-  
