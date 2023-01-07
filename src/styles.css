@@ -173,7 +173,9 @@ canvas#canvas {
   font-size: 20px;
 }
 
-
+i:hover{
+  color: var(--generated-color) !important
+}
 .offcanvas-body{
   display: flex;
   align-items: center;
