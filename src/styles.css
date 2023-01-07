@@ -4,6 +4,8 @@
   --generated-color: #000000;
 }
 
+
+
 .no_highlights{
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -22,8 +24,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0px;  
 }
 
 canvas {
@@ -49,6 +50,7 @@ a{
   text-decoration: none;
   color:black;
 }
+
 
 .username-lg, .hero-name{
   font-weight: 400; 
@@ -79,11 +81,12 @@ a{
 
 .hero-action {
   float: right;
-  font-size: 50px;
+  font-size: 26px;
 }
 
-#action:hover {
+#action:hover, #mob-action:hover, #mob-action2:hover {
    zoom:100.7%;
+
 }
 
 
@@ -91,7 +94,7 @@ a{
   text-decoration: underline;
   text-decoration-thickness: 1.5px; 
   text-underline-position: under;
-  color: var(--generated-color); 
+  color: black; 
 }
 
 .social-url-wrapper {
@@ -99,7 +102,7 @@ a{
 }
 
 .fs-35 {
-  font-size: 20px;
+  font-size: 13px;
   transition: 0.5s linear;
 }
 
@@ -109,7 +112,7 @@ a{
 }
 
 .nav-link{
-  font-size: 22px !important;
+  font-size: 16px !important;
 }
 
 .navbar{
@@ -131,7 +134,7 @@ a{
 }
 
 .latest-link, .text-muted {
-  font-size: 17px ;  
+  font-size: 11px ;  
   display: inline;
 }
 
@@ -197,7 +200,7 @@ canvas#canvas {
     font-size: 56px;
   }
   .hero-action {
-    font-size: 43px;
+    font-size: 20px;
   }
   .nav-link{
     position:relative;
@@ -216,7 +219,7 @@ canvas#canvas {
     text-underline-offset: 10px;
   }
   .hero-action {
-    font-size: 33px;
+    font-size: 16px;
   }
 }
 
@@ -228,14 +231,12 @@ canvas#canvas {
     text-decoration-thickness: 1.5px; 
     text-underline-offset: 8px;
   }
-  .hero-action {
-    font-size: 30px;
-  }
+
   .latest-link, .text-muted, #lat-fol-link {
-    font-size: 14px ;  
+    font-size: 9px ;  
   }
    .fs-35  {
-    font-size: 16px ; 
+    font-size: 11px ; 
    }
    .nav-link{
     right:140px;
@@ -244,9 +245,6 @@ canvas#canvas {
 
 @media only screen and  (max-width:992px){
 
-  .hero-action {
-    text-align: end;
-  }
   
   .hide-mob{
     display:none;
@@ -257,23 +255,23 @@ canvas#canvas {
   }
   
   .latest-link, .text-muted, #lat-fol-link {
-    font-size: 12px ;  
+    font-size: 9px ;  
   }
    .fs-35  {
-    font-size: 13px ; 
+    font-size: 9px ; 
    }
+   #mob-action{
+    font-size: 16px;
+
+   }
+
 }
 
 @media only screen and  (max-width:940px){
   .username-lg, .hero-name {
     font-size: 32px;
   }
-  .latest-link, .text-muted, #lat-fol-link {
-    font-size: 11px ;  
-  }
-   .fs-35  {
-    font-size: 12px ; 
-   }
+
 }
 
 @media only screen and  (max-width:767px){
@@ -281,7 +279,7 @@ canvas#canvas {
     font-size: 28px ;
   }
   .hide-mob-2{
-    zoom:70%
+    zoom:80%
   } 
   .hero-name{  
     text-decoration-thickness: 1.2px; 
@@ -289,57 +287,64 @@ canvas#canvas {
   }
   
   #mob-action-link{
-    left:300px;
+    text-align: end;
   }
 
 }
 
 @media only screen and  (max-width:576px){
   .username-lg, .hero-name {
-    font-size: 20px ;
+    font-size: 18px !important;
+    font-weight: 400;
+    
   }
   
-  #mob-action-link{
-    left:0px;
+  #mob-action-link2{
+    text-align: center;
+   
   }
   .hide-mob-2{
     display: none;
   }
-}
-
-@media only screen and  (max-width:420px){
-  .display-mob{
-    display: none;
-  }
-  .hero-phones, .github-phones{
+  .github-phones{
     display:block;
   
   }
-  #mob-action2{
-    color: var(--generated-color) !important; 
+  #action, #mob-action, #mob-action2{
+    text-decoration: underline;
+    text-decoration-thickness: .5px; 
+    text-underline-position: under;
+    color: black; 
+  }
+  .display-mob{
+    display: none;
+  }
 
+  .hero-phones{
+    display:block;
+  
   }
  
+  #mob-action2{
+    color: var(--generated-color) !important; 
+  }
   #mob-action-link2{
-    font-size: 28px;
+    font-size: 18px;
+    
   }  
   .username-lg, .hero-name{
-    font-size: 22px;
-    -webkit-text-stroke: 0.2px #eeecec  !important;  
+    font-size: 20px;
+    -webkit-text-stroke: none #eeecec  !important;  
     
-  }
- .herosection{
-  position: relative;
-  left:25px;
- }
+  } 
+
  .burger{
   position: relative; 
  }
  
  .github-phones{
-  zoom:70%
+  zoom:90%
  }
- 
 }
 
 @media only screen and  (max-width:319px){

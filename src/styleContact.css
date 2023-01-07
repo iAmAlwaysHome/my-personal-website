@@ -1,3 +1,9 @@
+#action, #mob-action, #mob-action2 {
+
+  color: var(--generated-color); 
+}
+
+
 .hide, .hide2 {
   display: none;
 }
@@ -373,6 +379,9 @@
     .table, .table2 {
       width: 270vw;
     }
+    .paws, .paws2 {
+      left: 135%;
+    }
   }
   
   @media only screen and  (max-width:420px){
@@ -412,6 +421,6 @@
     }
     
     .paws, .paws2 {
-      left: 115%;
+      left: 135%;
     }
   }

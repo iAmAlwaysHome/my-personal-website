@@ -1,3 +1,22 @@
+function copyDiscord() {
+
+	var copyText = "iamalwayshome#1637";  
+	 // Copy the text inside the text field
+	navigator.clipboard.writeText(copyText);  
+  }
+  
+  function copyEmail() {
+	var copyText = "meiamalwayshome@gmail.com";  
+	 // Copy the text inside the text field
+	navigator.clipboard.writeText(copyText);  
+  }
+
+document.querySelector("#discord-contact").addEventListener("click", copyDiscord);
+document.querySelector("#discord-contact2").addEventListener("click", copyDiscord);
+document.querySelector("#email-contact").addEventListener("click", copyEmail);
+document.querySelector("#email-contact2").addEventListener("click", copyEmail);
+
+
 const pupil = document.getElementsByClassName("eye");
 document.onmousemove = () => {
 	let x = (event.clientX * 8) / window.innerWidth + "%";

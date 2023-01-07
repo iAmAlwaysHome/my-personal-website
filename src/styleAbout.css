@@ -1,9 +1,16 @@
+.username-lg, .hero-name{
+    font-weight: 400; 
+    -webkit-text-stroke: 0.25px #eeecec  !important;  
+    transition: color 0.7s linear;  
+    transform: scale(.97, 1)
+  }
+
 .username-lg{
-    font-size:24px;
+    font-size:18px;
 }
 
 #action{
-    font-size:38px;
+    font-size:20px;
     
 }
 
@@ -46,117 +53,147 @@
     font-weight: 400;
     
   }
+  
+  #action, #mob-action, #mob-action2, .hero-name{
+    text-decoration: underline;
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 7px;
+    color: black; 
+  }
 
 @media only screen and  (max-width:1660px){
-    .username-lg, .hero-name {
-      font-size: 21px;
+    .username-lg, .hero-name, .resume {
+      font-size: 18px;
+    }
+    #action{
+        font-size:20px;
+        
     }
   }
   
 
   @media only screen and  (max-width:1400px){
-    .username-lg, .hero-name {
-      font-size: 18px;
+    .username-lg, .hero-name, .resume {
+      font-size: 16px;
     }
-    .hero-name{  
+    .hero-name {  
       text-decoration-thickness: 0.7px; 
       text-underline-offset: 8px;
     }
     #action {
-      font-size: 26px;
+      font-size: 18px;
     }
     .hero-text-desktop, .hero-action{
-        bottom: 30px;
+        bottom: 30px; 
       }
   }
   
   
   @media only screen and  (max-width:1199px){
-    .username-lg, .hero-name {
+    .username-lg, .hero-name, .resume{
       font-size: 14px;
     }
     .hero-name{  
       text-decoration-thickness: 0.5px; 
       text-underline-offset: 6px;
     }
-    .hero-action {
-      font-size: 30px;
+    #action{
+      font-size: 14px;
+      text-decoration-thickness: 0.5px; 
+      text-underline-offset: 2px;
     }
    
   }
 
+  @media only screen and  (max-width:992px){
+    .username-lg, .hero-name, .resume {
+        font-size: 14px;
+        -webkit-text-stroke: none   !important; 
+      }
+      #mob-action2 {
+        font-size: 10px;
+        text-decoration-thickness: 0.5px; 
+        text-underline-offset: 2px;
+      }
+      .hero-phones{
+        display:block;      
+      }
+      .display-mob{
+        display: block;
+      }
+      .herosection{
+        position: relative;
+        right:10px;
+       }
+       
+
+
+  }
+  
+  @media only screen and  (max-width:940px){
+    #mob-action {
+        font-size: 10px;
+      }
+  }
   
   @media only screen and  (max-width:900px){
     .username-lg, .hero-name {
-        font-size: 12px;
-      }
-      #mob-action {
         font-size: 14px;
       }
+
+      #mob-action, .resume {
+        font-size: 10px;
+      }
+      
   }
 
   @media only screen and  (max-width:767px){
     .username-lg, .hero-name {
-      font-size: 9.5px ;
-    }
-
-    .hero-name{  
-      text-decoration-thickness: 0.1px; 
-      text-underline-offset: 4px;
-    }
-    
-    #mob-action-link{
-      left:355px;
-    }
-    .hero-text-mobile{
-        position:relative;
-        top: 10px !important;
+      font-size: 12px ;
+    } 
+    #mob-action2, .resume {
+        font-size: 10px;
       }
-          .hero-action {
-      font-size: 30px;
-    }
-    #mob-action {
-        font-size: 12px;
-      }
-    
-  
+   
   }
      
   @media only screen and  (max-width:576px){
     .username-lg, .hero-name {
-      font-size: 7px ;
+      font-size: 9px !important;
     }
     
-    #mob-action-link{
-      left:340px;
+    #mob-action-link2{
+      left:0px;
     }
-    .hide-mob-2{
-      display: none;
-    }
-    #mob-action {
-        font-size: 9px;
+
+    #mob-action2 , .resume{
+        font-size: 8px;
       }
+
+   .github-phones{
+        display:block;
+        position: relative;
+        top:50px;
+      }
+   
   }
   
   @media only screen and  (max-width:420px){
-    .display-mob{
-      display: none;
-    }
-    .hero-phones, .github-phones{
-      display:block;
-    
-    }
-    #mob-action2{
-      color: var(--generated-color) !important; 
+ 
   
+    #mob-action2{
+       
+      position:relative;
+      left:10px;
+      
     }
    
-    #mob-action-link2{
-      font-size: 11px;
+    #mob-action-link2, .resume{
+      font-size: 6px !important; 
     }  
     .username-lg, .hero-name{
-      font-size: 6.5px;
-      -webkit-text-stroke: none #eeecec  !important;  
+      font-size: 6.5px !important;
+       
       
     }
    .herosection{
@@ -177,3 +214,10 @@
   }
    
   }
+
+  @media only screen and  (max-width:319px){
+    html{
+      zoom:80%
+    }
+  }
+  
