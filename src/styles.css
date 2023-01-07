@@ -294,9 +294,12 @@ canvas#canvas {
 
 @media only screen and  (max-width:576px){
   .username-lg, .hero-name {
-    font-size: 18px !important;
+    font-size: 14px !important;
     font-weight: 400;
     
+  }
+  .hero-name{
+    font-weight: 300;
   }
   
   #mob-action-link2{
@@ -310,10 +313,16 @@ canvas#canvas {
     display:block;
   
   }
-  #action, #mob-action, #mob-action2{
-    text-decoration: underline;
+  #mob-action2{
     text-decoration-thickness: .5px; 
-    text-underline-position: under;
+    text-underline-offset: 2px !important;
+    color: black; 
+  }
+  
+   .hero-name{
+    text-decoration: underline;
+    text-decoration-thickness: .2px; 
+    text-underline-offset: 3px !important;
     color: black; 
   }
   .display-mob{
@@ -329,7 +338,7 @@ canvas#canvas {
     color: var(--generated-color) !important; 
   }
   #mob-action-link2{
-    font-size: 18px;
+    font-size: 14px;
     
   }  
   .username-lg, .hero-name{

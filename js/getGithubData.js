@@ -35,12 +35,8 @@ function convert_time(time) {
 }
 
 async function get_latest_repo() {
-	let my_token = "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";
-	let response = await axios.get('https://api.github.com/users/iAmAlwaysHome/repos?sort=created&per_page=1', {
-		'headers': {
-		  'Authorization': `token ${my_token}` 
-		}
-	  });
+	
+	let response = await axios.get('https://api.github.com/users/iAmAlwaysHome/repos?sort=created&per_page=1');
 	response = response.data[0];	
 	document.querySelector("#lat-repo-date").innerHTML=convert_time(response['created_at']);
 	document.querySelector("#lat-repo-wrapper").innerHTML=`<a  href="${response['html_url']}" target="_blank"  class="ff-pop latest-link" > ${response['name']}/ </a>`;
@@ -49,19 +45,11 @@ async function get_latest_repo() {
 }
 
 async function get_latest_commit() {
-	let my_token = "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";
-	let responseRepo = await axios.get('https://api.github.com/users/iAmAlwaysHome/repos?sort=created&per_page=1', {
-		'headers': {
-		  'Authorization': `token ${my_token}` 
-		}
-	  });
+
+	let responseRepo = await axios.get('https://api.github.com/users/iAmAlwaysHome/repos?sort=created&per_page=1');
 	responseRepo = responseRepo.data[0];
 	
-	let responseCom = await axios.get(`https://api.github.com/repos/iAmAlwaysHome/${responseRepo['name']}/branches/main`, {
-		'headers': {
-		  'Authorization': `token ${my_token}` 
-		}
-	  });
+	let responseCom = await axios.get(`https://api.github.com/repos/iAmAlwaysHome/${responseRepo['name']}/branches/main`);
 	
 	responseCom = responseCom.data.commit; 	
 	let url = responseCom.html_url;
@@ -77,21 +65,13 @@ async function get_latest_commit() {
 
 async function get_latest_follower() {
 	
-	let my_token = "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";
-	let response_fol_count = await axios.get('https://api.github.com/users/iAmAlwaysHome', {
-		'headers': {
-		  'Authorization': `token ${my_token}` 
-		}
-	  });
+	
+	let response_fol_count = await axios.get('https://api.github.com/users/iAmAlwaysHome');
 	response_fol_count = response_fol_count.data;
 	let followers_count = response_fol_count['followers'];
 	document.querySelector("#lat-fol-n").innerHTML=`#${followers_count}`; 
 	
-	let response = await axios.get('https://api.github.com/users/iAmAlwaysHome/followers?per_page=1&page=' + followers_count.toString(), {
-		'headers': {
-		  'Authorization': `token ${my_token}` 
-		}
-	  });
+	let response = await axios.get('https://api.github.com/users/iAmAlwaysHome/followers?per_page=1&page=' + followers_count.toString());
 	response = response.data[0];
 	
 	document.querySelector("#lat-fol-link-wrapper").innerHTML=` <a id="lat-fol-link" href="${response['html_url']}" target="_blank" class="ff-pop latest-link"><img width="15" height="15" src="${response['avatar_url']}" class="rounded-circle border"> ${response['login']}</a>`;
