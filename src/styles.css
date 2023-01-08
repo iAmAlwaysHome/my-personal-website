@@ -39,6 +39,8 @@ a{
   color:black;
 }
 
+
+
 .navbar-toggler {
   zoom:60% !important;
   opacity:80%
@@ -76,25 +78,29 @@ a{
 
 .hero-name:hover{
   cursor:pointer; 
-  color: var(--generated-color); 
+  color: blue; 
 }
 
 .hero-action {
   float: right;
-  font-size: 26px;
+   
 }
 
-#action:hover, #mob-action:hover, #mob-action2:hover {
-   zoom:100.7%;
-
+#action:hover, #mob-action:hover, #mob-action2:hover,  .action-box:hover {
+   
+   text-decoration: underline;
+   text-decoration-thickness: 1.5px; 
+  font-size: 102%;
 }
 
+ 
 
 #action, #mob-action, #mob-action2{
+   
   text-decoration: underline;
-  text-decoration-thickness: 1.5px; 
-  text-underline-position: under;
-  color: black; 
+  text-decoration-thickness: 1px;
+  text-underline-offset: 7px;
+  color: blue; 
 }
 
 .social-url-wrapper {
@@ -327,10 +333,10 @@ i:hover{
   }
  
   #mob-action2{
-    color: var(--generated-color) !important; 
+    color: blue  
   }
   #mob-action-link2{
-    font-size: 14px;
+    font-size: 12px;
     
   }  
   .username-lg, .hero-name{

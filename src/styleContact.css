@@ -232,7 +232,7 @@
 .cat-phones{
   display:none;
 }
-.socialmediaicon2 {
+.socialmediaicon2, #action2  {
   color: var(--generated-color);
 }
 .hero-phones{
