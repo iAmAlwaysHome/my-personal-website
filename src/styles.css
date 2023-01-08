@@ -1,372 +1,404 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
-:root{
-  --generated-color: #000000;
-} 
-
-
-body {  
-  background-color: #eeecec !important;
-  font-family: 'Poppins', sans-serif;
-  color: black; 
-  overflow:scroll;
+:root {
+	--generated-color: #000000;
 }
- 
+
+body {
+	background-color: #eeecec !important;
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	overflow: scroll;
+}
 
 canvas {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
- 
-
 
 #all {
-  display: flex;
-  z-index: 2;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+	display: flex;
+	z-index: 2;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 #canvas {
-  background: rgb(255, 255, 255);
+	background: rgb(255, 255, 255);
 }
 
-a{
-  text-decoration: none;
-  color:black;
+a {
+	text-decoration: none;
+	color: black;
 }
-
-
 
 .navbar-toggler {
-  zoom:60% !important;
-  opacity:80%
+	zoom: 60% !important;
+	opacity: 80%
 }
 
-.navbar{
-  padding-top: 2em;
+.navbar {
+	padding-top: 2em;
 }
 
-.nav-link, .navbar-brand{
-  font-size: 20px;
+.nav-link,
+.navbar-brand {
+	font-size: 20px;
 }
 
-.username-lg, .hero-name{
-  font-weight: 400; 
-  -webkit-text-stroke: 0.5px #eeecec  !important;  
-  transition: color 0.7s linear;  
-  transform: scale(.97, 1)
+.username-lg,
+.hero-name {
+	font-weight: 400;
+	-webkit-text-stroke: 0.5px #eeecec !important;
+	transition: color 0.7s linear;
+	transform: scale(.97, 1)
 }
 
 
-.username-lg {  
-  font-size: 65px;
- 
+.username-lg {
+	font-size: 65px;
+
 }
 
-.hero-name{  
-  
-  text-decoration: underline;
-  text-decoration-thickness: 3.5px; 
-  -webkit-text-stroke: 0px !important;  
-  text-underline-offset: 14px;
-  
+.hero-name {
+
+	text-decoration: underline;
+	text-decoration-thickness: 3.5px;
+	-webkit-text-stroke: 0px !important;
+	text-underline-offset: 14px;
+
 }
 
-.hero-name:hover{
-  cursor:pointer; 
-  color: blue; 
+.hero-name:hover {
+	cursor: pointer;
+	color: blue;
 }
 
 .hero-action {
-  float: right;
-   
+	float: right;
+
 }
 
-#action:hover, #mob-action:hover, #mob-action2:hover,  .action-box:hover {
-   
-   text-decoration: underline;
-   text-decoration-thickness: 1.5px; 
-  font-size: 102%;
+#action:hover,
+#mob-action:hover,
+#mob-action2:hover
+ {
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+  transform: scale(1.02);
 }
 
- 
-
-#action, #mob-action, #mob-action2{
-   
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 7px;
-  color: blue; 
+#action,
+#mob-action,
+#mob-action2 {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 7px;
+	color: blue;
 }
 
 .social-url-wrapper {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .fs-35 {
-  font-size: 13px;
-  transition: 0.5s linear;
+	font-size: 13px;
+	transition: 0.5s linear;
 }
 
 .w-100.mt-5 {
-  height: 2px;
-  transition: 0.5s linear;
+	height: 2px;
+	transition: 0.5s linear;
 }
 
-
-.latest-link, .text-muted {
-  font-size: 12px ;  
-  display: inline;
+.latest-link,
+.text-muted {
+	font-size: 12px;
+	display: inline;
 }
 
 .text-muted {
-  opacity:0.9
+	opacity: 0.9
 }
 
-.latest-link:hover{
-  text-decoration: underline;
+.latest-link:hover {
+	text-decoration: underline;
 }
 
-#mob-action-link{
-  position:relative;
-  left:400px;
+#mob-action-link {
+	position: relative;
+	left: 400px;
 }
 
 #app {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 1s ease;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 1s ease;
 }
 
 .preloader {
-  align-items: center;
-  background: rgb(255, 255, 255);
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  left: 0;
-  position: fixed;
-  top: 0;
-  transition: opacity 0.3s linear;
-  width: 100%;
-  z-index: 9999;
+	align-items: center;
+	background: rgb(255, 255, 255);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	transition: opacity 0.3s linear;
+	width: 100%;
+	z-index: 9999;
 }
 
 canvas#canvas {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  background: transparent;
-  left: 0;
-  height: auto;
-  width: 100vw;
-} 
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	background: transparent;
+	left: 0;
+	height: auto;
+	width: 100vw;
+}
 
-.display-mob, .hero-phones, .github-phones{
-  display: none;
+.display-mob,
+.hero-phones,
+.github-phones {
+	display: none;
 }
 
 
-.hero-about{
-  font-size: 20px;
+.hero-about {
+	font-size: 20px;
 }
 
-i:hover{
-  color: var(--generated-color) !important
-}
-.offcanvas-body{
-  display: flex;
-  align-items: center;
+i:hover {
+	color: var(--generated-color) !important
 }
 
-@media only screen and  (max-width:1660px){
-  .username-lg, .hero-name {
-    font-size: 56px;
-  }
-  .hero-action {
-    font-size: 20px;
-  }
-  
-  .nav-link, .navbar-brand{
-    font-size: 18px;
-  }
- 
+.offcanvas-body {
+	display: flex;
+	align-items: center;
 }
 
+@media only screen and (max-width:1660px) {
 
+	.username-lg,
+	.hero-name {
+		font-size: 56px;
+	}
 
-@media only screen and  (max-width:1400px){
-  .username-lg, .hero-name {
-    font-size: 48px;
-  }
-  .hero-name{  
-    text-decoration-thickness: 2.5px; 
-    text-underline-offset: 10px;
-  }
-  .hero-action {
-    font-size: 16px;
-  }
-}
+	.hero-action {
+		font-size: 20px;
+	}
 
-@media only screen and  (max-width:1199px){
-  .username-lg, .hero-name {
-    font-size: 38px;
-  }
-  .hero-name{  
-    text-decoration-thickness: 1.5px; 
-    text-underline-offset: 8px;
-  }
-
-  .latest-link, .text-muted, #lat-fol-link {
-    font-size: 9px ;  
-  }
-   .fs-35  {
-    font-size: 11px ; 
-   }
- 
-   .nav-link, .navbar-brand{
-    font-size: 16px;
-  }
-}
-
-@media only screen and  (max-width:992px){
-
-  
-  .hide-mob{
-    display:none;
-  }
-  
-  .display-mob{
-    display:block;
-  }
-  
-  .latest-link, .text-muted, #lat-fol-link {
-    font-size: 9px ;  
-  }
-   .fs-35  {
-    font-size: 9px ; 
-   }
-   #mob-action{
-    font-size: 16px;
-
-   }
-   
-   .nav-link, .navbar-brand{
-    font-size: 16px;
-  }
-
-}
-
-@media only screen and  (max-width:940px){
-  .username-lg, .hero-name {
-    font-size: 32px;
-  }
-
-}
-
-@media only screen and  (max-width:767px){
-  .username-lg, .hero-name {
-    font-size: 28px ;
-  }
-  .hide-mob-2{
-    zoom:80%
-  } 
-  .hero-name{  
-    text-decoration-thickness: 1.2px; 
-    text-underline-offset: 6px;
-  }
-  
-  #mob-action-link{
-    text-align: end;
-  }
-
-}
-
-@media only screen and  (max-width:576px){
-  .username-lg, .hero-name {
-    font-size: 14px !important;
-    font-weight: 400;
-    
-  }
-  .hero-name{
-    font-weight: 300;
-  }
-  
-  #mob-action-link2{
-    text-align: center;
-   
-  }
-  .hide-mob-2{
-    display: none;
-  }
-  .github-phones{
-    display:block;
-  
-  }
-  #mob-action2{
-    text-decoration-thickness: .5px; 
-    text-underline-offset: 2px !important;
-    color: black; 
-  }
-  
-   .hero-name{
-    text-decoration: underline;
-    text-decoration-thickness: .2px; 
-    text-underline-offset: 3px !important;
-    color: black; 
-  }
-  .display-mob{
-    display: none;
-  }
-
-  .hero-phones{
-    display:block;
-  
-  }
- 
-  #mob-action2{
-    color: blue  
-  }
-  #mob-action-link2{
-    font-size: 12px;
-    
-  }  
-  .username-lg, .hero-name{
-    font-size: 20px;
-    -webkit-text-stroke: none #eeecec  !important;  
-    
-  } 
-
- .burger{
-  position: relative; 
- }
- 
- .github-phones{
-  zoom:90%
- }
- 
- .nav-link, .navbar-brand{
-  font-size: 14px;
-}
-
+	.nav-link,
+	.navbar-brand {
+		font-size: 18px;
+	}
 
 }
 
 
+@media only screen and (max-width:1400px) {
+
+	.username-lg,
+	.hero-name {
+		font-size: 48px;
+	}
+
+	.hero-name {
+		text-decoration-thickness: 2.5px;
+		text-underline-offset: 10px;
+	}
+
+	.hero-action {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width:1199px) {
+
+	.username-lg,
+	.hero-name {
+		font-size: 38px;
+	}
+
+	.hero-name {
+		text-decoration-thickness: 1.5px;
+		text-underline-offset: 8px;
+	}
+
+	.latest-link,
+	.text-muted,
+	#lat-fol-link {
+		font-size: 9px;
+	}
+
+	.fs-35 {
+		font-size: 11px;
+	}
+
+	.nav-link,
+	.navbar-brand {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width:992px) {
 
 
-@media only screen and  (max-width:319px){
-  html{
-    zoom:70%
-  }
+	.hide-mob {
+		display: none;
+	}
+
+	.display-mob {
+		display: block;
+	}
+
+	.latest-link,
+	.text-muted,
+	#lat-fol-link {
+		font-size: 9px;
+	}
+
+	.fs-35 {
+		font-size: 9px;
+	}
+
+	#mob-action {
+		font-size: 16px;
+
+	}
+
+	.nav-link,
+	.navbar-brand {
+		font-size: 16px;
+	}
+
+}
+
+@media only screen and (max-width:940px) {
+
+	.username-lg,
+	.hero-name {
+		font-size: 32px;
+	}
+
+}
+
+@media only screen and (max-width:767px) {
+
+	.username-lg,
+	.hero-name {
+		font-size: 28px;
+	}
+
+	.hide-mob-2 {
+		zoom: 80%
+	}
+
+	.hero-name {
+		text-decoration-thickness: 1.2px;
+		text-underline-offset: 6px;
+	}
+
+	#mob-action-link {
+		text-align: end;
+	}
+
+}
+
+@media only screen and (max-width:576px) {
+
+	.username-lg,
+	.hero-name {
+		font-size: 14px !important;
+		font-weight: 400;
+
+	}
+
+	.hero-name {
+		font-weight: 300;
+	}
+
+	#mob-action-link2 {
+		text-align: center;
+
+	}
+
+	.hide-mob-2 {
+		display: none;
+	}
+
+	.github-phones {
+		display: block;
+
+	}
+
+	#mob-action2 {
+		text-decoration-thickness: .5px;
+		text-underline-offset: 2px !important;
+		color: black;
+	}
+
+	.hero-name {
+		text-decoration: underline;
+		text-decoration-thickness: .2px;
+		text-underline-offset: 3px !important;
+		color: black;
+	}
+
+	.display-mob {
+		display: none;
+	}
+
+	.hero-phones {
+		display: block;
+
+	}
+
+	#mob-action2 {
+		color: blue
+	}
+
+	#mob-action-link2 {
+		font-size: 12px;
+
+	}
+
+	.username-lg,
+	.hero-name {
+		font-size: 20px;
+		-webkit-text-stroke: none #eeecec !important;
+
+	}
+
+	.burger {
+		position: relative;
+	}
+
+	.github-phones {
+		zoom: 90%
+	}
+
+	.nav-link,
+	.navbar-brand {
+		font-size: 14px;
+	}
+
+
 }
 
 
+@media only screen and (max-width:319px) {
+	#all {
+		zoom: 70%
+	}
+}

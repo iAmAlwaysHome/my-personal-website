@@ -33,6 +33,14 @@
 }
 #action:hover {
   text-decoration-thickness: 1.5px;
+   
+}
+#action:hover,
+#mob-action:hover,
+#mob-action2:hover,
+.action-box:hover {
+	zoom:102%;
+  
 }
 @media only screen and (max-width:1660px){
   .username-lg, .hero-name, .resume {

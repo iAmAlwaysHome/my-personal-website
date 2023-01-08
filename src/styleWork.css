@@ -1,6 +1,12 @@
-body{
-    zoom:95%
+#all{
+    zoom:95%;  
+     
 }
+
+body{
+    overflow: hidden;
+}
+
 .works-mob{
     display:none 
 }
@@ -30,7 +36,12 @@ a,body,div,h2,html,p,ul{
    .fa-github:hover, .name-link:hover, .link:focus,.link:hover  {
     transition:color .15s ease-in;
     color:blue !important;
-    
+     
+}
+
+  .name-link:hover   {
+
+    text-decoration:underline
 }
  
 
@@ -105,28 +116,29 @@ a,body,div,h2,html,p,ul{
 
 
 @media only screen and (max-width:1601px){
-    html{
-        zoom:90% 
+    #all{
+        zoom:85% 
    }
 }
 @media only screen and (max-width:1367px){
-    html{
-        zoom:80% 
+    #all{
+        zoom:75% 
    }
 }
 @media only screen and (max-width:993px){
     .works-mob{
         display:block;
-        zoom:80% 
+        
    }
+
 }
 @media only screen and (max-width:576px){
-    html{
-        zoom:72% 
-   }
+    #all{
+        zoom:50% 
+       }
 }
 @media only screen and (max-width:319px){
-    html{
-        zoom:70% 
-   }
+    #all{
+        zoom:40% 
+       }
 }
