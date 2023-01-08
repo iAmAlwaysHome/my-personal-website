@@ -6,6 +6,11 @@
   font-size:17px;
   -webkit-text-stroke: 0px !important;
 }
+
+.flag{
+	zoom:.25
+}
+
 #action, #mob-action, #mob-action2, .hero-name{
   text-decoration: underline;
   text-decoration-thickness: 1px;

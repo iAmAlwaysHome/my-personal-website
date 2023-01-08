@@ -57,6 +57,9 @@ a {
 	transform: scale(.97, 1)
 }
 
+.flag{
+	zoom:85%
+}
 
 .username-lg {
 	font-size: 65px;
@@ -185,6 +188,24 @@ i:hover {
 .offcanvas-body {
 	display: flex;
 	align-items: center;
+}
+
+.terminal{
+	color:rgba(0, 0, 0, 0.05);
+	width: 30%;
+}
+
+.blink--1{
+    animation:blinking 1s linear infinite;
+    opacity:0 
+}
+@keyframes blinking{
+    0%,49.9%{
+        opacity:0 
+   }
+    50%,to{
+        opacity:1 
+   }
 }
 
 @media only screen and (max-width:1660px) {
