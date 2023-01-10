@@ -72,10 +72,7 @@ async function get_latest_commit() {
 			return;
             
         }
-    }
-	
-				
-	
+    } 
 }
 
 
@@ -86,7 +83,7 @@ async function get_latest_follower() {
 	let followers_count = response_fol_count['followers'];
 	document.querySelector("#lat-fol-n").innerHTML=`#${followers_count}`; 
 	
-	let response = await axios.get('https://api.github.com/users/iAmAlwaysHome/followers?per_page=1&page=' + followers_count.toString());
+	let response = await axios.get('https://api.github.com/users/iAmAlwaysHome/followers?per_page=1&page=' + (followers_count.toString()-1));
 	response = response.data[0];
 	
 	document.querySelector("#lat-fol-link-wrapper").innerHTML=` <a id="lat-fol-link" href="${response['html_url']}" target="_blank" class="ff-pop latest-link"><img width="25" height="25" src="${response['avatar_url']}" class="rounded-circle border"> ${response['login']}</a>`;
