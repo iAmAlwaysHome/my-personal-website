@@ -1,3 +1,7 @@
+.hero-text-desktop{
+  zoom:0.9;
+}
+
 .username-lg, .hero-name, .resume{
   font-weight: 400;
   -webkit-text-stroke: 0.25px #eeecec !important;
@@ -13,7 +17,7 @@
 
 #action, #mob-action, #mob-action2, .hero-name{
   text-decoration: underline;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 0.5px;
   text-underline-offset: 7px;
 }
 #action{
@@ -47,6 +51,16 @@
 	zoom:102%;
   
 }
+
+.computer-emoji{
+  text-shadow:
+  0 0 0.5px rgb(0, 0, 0, 0.25),
+  -0.7px -0.7px 0.7px rgb(0, 0, 0, 0.25),
+  -0.5px 0.5px 0.5px rgb(0, 0, 0, 0.25),
+  0.5px 0.6px 0.5px rgb(0, 0, 0, 0.25),
+  0.7px -0.7px 0.7px rgb(0, 0, 0, 0.25);
+}
+
 @media only screen and (max-width:1660px){
   .username-lg, .hero-name, .resume {
       font-size: 14px;
@@ -60,7 +74,7 @@
       font-size: 12px;
  }
   .hero-name {
-      text-decoration-thickness: 0.7px;
+      text-decoration-thickness: 0.5px;
       text-underline-offset: 8px;
  }
   #action {
