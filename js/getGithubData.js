@@ -80,8 +80,7 @@ async function get_latest_follower() {
 	
 	let response_fol_count = await axios.get('https://api.github.com/users/iAmAlwaysHome');
 	response_fol_count = response_fol_count.data;
-	let followers_count = response_fol_count['followers'];
-	document.querySelector("#lat-fol-n").innerHTML=`#${followers_count}`; 
+	let followers_count = response_fol_count['followers']; 
 	
 	let response = await axios.get('https://api.github.com/users/iAmAlwaysHome/followers?per_page=1&page=' + (followers_count.toString()-1));
 	response = response.data[0];
