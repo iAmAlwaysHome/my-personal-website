@@ -114,6 +114,13 @@ a,body,div,h2,html,p,ul{
    }
 }
 
+#action, #mob-action2{
+    opacity:70%
+}
+
+#action:hover, #mob-action2:hover{
+    opacity:100%
+}
 
 @media only screen and (max-width:1601px){
     #all{
