@@ -40,15 +40,12 @@
   transform: scale(0.95, 1) !important;
   font-weight: 400;
 }
-#action:hover {
-  text-decoration-thickness: 1.5px;
-   
-}
+ 
 #action:hover,
 #mob-action:hover,
 #mob-action2:hover,
 .action-box:hover {
-	zoom:102%;
+	opacity:100%;
   
 }
 
