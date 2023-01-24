@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Evelina-Svitlana Protsenko is a developer from Ukraine based in Switzerland">
-    <title>About</title>
+    <meta name="description" content="Tech-stack of Evelina-Svitlana Protsenko">
+    <title>Tech Stack</title>
     <script src="https://kit.fontawesome.com/0dcbce5e8a.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/styleAbout.css" />
+    <link rel="stylesheet" href="/css/techStack.css" />
     <link rel="icon" type="image/x-icon" href="/src/favicon.png">
   </head>
   <body>
@@ -19,55 +19,82 @@
     </div>
     <div id="all">
       <div id="app">
-        <div class="container-fluid">
-          <div class="hero-text-desktop hide-mob">
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-7">
-                <div class="herosection mt-5">
-                  <h1 class="username-lg"> Hi, my name is Evelina-Svitlana Protsenko but you can call me Lina. <br>                    
-                    I love  programming, traveling, and learning new things. <br>
-                    <br> I had the chance to study math, programming, and game design <br> in 4 countries: <img src="src/emoji/ua.png" alt="ua emoji" class="flag"> Ukraine, <img src="src/emoji/ru.png" alt="ua emoji" class="flag"> Russia, <img src="src/emoji/sct.png" alt="ua emoji" class="flag"> Scotland, and now <img src="src/emoji/ch.png" alt="ua emoji" class="flag"> Switzerland. <br> I also attended Y Combinator startup school. <br><br>
-                    Amongst too many things I'm curious about, I'm passionate about <br> technology, entrepreneurship, innovation, and the internet. <br><br>
-                    I like to believe that I have a good grasp of  C/C++, Linux, Bash, Javascript, <br>                  
-                    Bootstrap, and React. Feel free to <span class=computer-emoji>💻</span> <a class="hero-name" alt="Lina's Work" href="/work.html" target="_blank">explore my works</a> and decide for yourself.                 
-                  </h1>
+        <div class="container-fluid stack fixed-top" >
+          
+          <div class="tech-stack text-center">
+            <h1>My Tech Stack</h1>
+            <div class="icon-row spaced">
+                <div class="stack-btn">
+                    <img class="stack-icon" src="/src/stack/c_icon.svg" alt="c Icon">
+                    <h3 >C</h3>
                 </div>
-              </div>
-              <div class="col-1 hide-mob-2"></div>
-            </div>
-          </div>
-          <div class="hero-phones">
-            <div class="row">
-              <div class="col-1"></div>
-              <div class="col-10">
-                <div class="herosection ">
-                  <h1 class="username-lg"> Hi, my name is Evelina-Svitlana Protsenko but you can call me Lina. <br> I love programming, travelling and learning new things. <br>
-                    <br> I had the chance to study math, programming and game design <br> in 4 countries: 🇺🇦 Ukraine, 🇷🇺 Russia, 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland and now 🇨🇭 Switzerland. <br> I also attended Y Combinator startup school. <br>
-                    <br> Amongst too many things I'm curious about, I'm passionate about <br> technology, entrepreneurship, innovation, and the internet. <br><br>  
-                    I like to believe that I have a good grasp of  C/C++, Linux, Bash, Javascript, <br>                  
-                    Bootstrap, and React. Feel free to <span class=computer-emoji>💻</span> <a class="hero-name" alt="Lina's Work" href="/work.html" target="_blank">explore my works</a> and decide for yourself.   
-                  </h1>
+                <div class="stack-btn">
+                    <img class="stack-icon" src="/src/stack/cpp_icon.svg" alt="c++ Icon">
+                    <h3>C++</h3>
                 </div>
-                <a href="/stack.html" id="mob-action-link2">
-                  <span id="mob-action2">See My Tech Stack</span>
-                </a>
+                <div class="stack-btn">
+                    <img class="stack-icon" src="/src/stack/js_icon.svg" alt="js Icon">
+                    <h3>Javascript</h3>
+                </div>
+                <div class="stack-btn">
+                  <img class="stack-icon" src="/src/stack/react_icon.svg" alt="react Icon">
+                  <h3>ReactJS</h3>
               </div>
+            </div> 
+            
+            <div class="icon-row spaced">
+              <div class="stack-btn">
+                <img class="stack-icon" src="/src/stack/nodejs_icon.svg" alt="Gradle Icon">
+                <h3>NodeJS</h3>
             </div>
-            <div class="col-1"></div>
+            <div class="stack-btn">
+                <img class="stack-icon" src="/src/stack/bs_icon.svg" alt="Git Icon">
+                <h3>Bootstrap</h3>
+            </div> 
+              <div class="stack-btn">
+                <img class="stack-icon" src="/src/stack/html_icon.svg" alt="html5 Icon">
+                <h3>HTML</h3>
+            </div>
+              <div class="stack-btn">
+                <img class="stack-icon" src="/src/stack/css_icon.svg" alt="css Icon">
+                <h3>CSS</h3>
+            </div> 
+            
           </div>
+          
+          <div class="icon-row spaced">
+            <div class="stack-btn">
+                <img class="stack-icon" src="/src/stack/linux_icon.gif" alt="linux Icon" id="linux">
+                <h3>Linux</h3>
+            </div>
+            <div class="stack-btn">
+                <img class="stack-icon" src="/src/stack/bash_icon.png" alt="bash Icon" id="bash">
+                <h3>Bash</h3>
+            </div>
+            <div class="stack-btn">
+                <img class="stack-icon" src="/src/stack/make_icon.svg" alt="make Icon" id="make">
+                <h3>Makefile</h3>
+            </div>
+            <div class="stack-btn">
+                <img class="stack-icon" src="/src/stack/git_icon.svg" alt="git Icon">
+                <h3>Git</h3>
+            </div>
+        </div>        
+           
         </div>
-        <div class="fixed-bottom">
-          <div class="row hide-mob ">
-            <div class="col-8"></div>
-            <div class="col-2 ">
-              <a class="hero-action " href="/stack.html">
-                <span id="action">See My Tech Stack</span>
-              </a>
-              <br>
-            </div>
-            <div class="col-2"></div>
-          </div>
+        <div class="row ">
+           <div class="col-4"></div>
+          <div class="col-3">
+            <a class="hero-action " href="/work.html">
+              <span id="action">Explore my works</span>
+            </a>
+            <br>
+          </div> 
+          <div class="col-5"></div>         
+      </div>
+      </div>
+        
+        <div class="fixed-bottom">          
           <div class="github-phones">
             <div class="row ">
               <hr class="w-100 mt-5">
@@ -149,7 +176,7 @@
                       </li>
                       <li class="nav-item">
                         <a class="nav-link " href="/work.html" alt="Lina's Work">Work</a>
-                      </li>
+                      </li>                    
                       <li class="nav-item">
                         <a class="nav-link " href="/contact.html" alt="Lina's contact">Contact</a>
                       </li>

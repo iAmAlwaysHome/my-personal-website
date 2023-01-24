@@ -40,6 +40,10 @@ a {
 	opacity: 80%
 }
 
+.navbar-sections{
+	margin-left:5rem;
+}
+
 .navbar {
 	padding-top: 2em;
 }
@@ -89,7 +93,8 @@ a {
 #mob-action:hover,
 #mob-action2:hover
  {
-	 opacity:100%
+	 opacity:100%;
+	 filter:blur(0.4px);
 }
 
 #action,
@@ -301,6 +306,9 @@ i:hover {
 	.nav-link,
 	.navbar-brand {
 		font-size: 16px;
+	}
+	.navbar-sections{
+		margin-left:0rem;
 	}
 
 }

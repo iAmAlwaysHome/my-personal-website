@@ -430,6 +430,9 @@
   .paws, .paws2 {
       left: 135%;
  }
+ .navbar{
+  zoom:110% 
+ }
 }
 
 @media only screen and (max-width:319px) {
@@ -438,4 +441,7 @@
     height: 357vh;
     left: 140%;
 }
+.navbar{
+  zoom:150% 
+ }
 }

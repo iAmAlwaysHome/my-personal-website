@@ -134,8 +134,9 @@ a,body,div,h2,html,p,ul{
 }
 @media only screen and (max-width:993px){
     .works-mob{
-        display:block;
-        
+        display:block;        
+        position:relative;
+        top:5rem
    }
 
 }
@@ -143,9 +144,15 @@ a,body,div,h2,html,p,ul{
     #all{
         zoom:50% 
        }
+       .navbar{
+        zoom:200% 
+       }
+       .works-mob {
+        top:15rem
+       }
 }
 @media only screen and (max-width:319px){
     #all{
-        zoom:40% 
+        zoom:30% 
        }
 }

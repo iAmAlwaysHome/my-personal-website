@@ -139,7 +139,7 @@
 }
 @media only screen and (max-width:576px){
   .username-lg, .hero-name , .resume{
-      font-size: 9px !important;
+      font-size: 8.5px !important;
  }
   #mob-action-link2{
       left:0px;
