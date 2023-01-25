@@ -8,6 +8,23 @@ class Point {
 	}
 }
 
+startAnimation_nocursor = () => {
+	const canvas = document.getElementById("canvas");
+	const ctx = canvas.getContext("2d");
+
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	window.addEventListener(
+		"resize",
+		({ target: { innerWidth, innerHeight } }) => {
+			canvas.width = innerWidth;
+			canvas.height = innerHeight;
+		},
+		false
+	);
+};
+
+
 startAnimation = () => {
 	const canvas = document.getElementById("canvas");
 	const ctx = canvas.getContext("2d");
@@ -38,7 +55,7 @@ startAnimation = () => {
 
 	const animatePoints = () => {
 		ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-		const duration = (0.5 * (1 * 1000)) / 144;
+		const duration = (0.25 * (1 * 1000)) / 144;
 
 		for (let i = 0; i < points.length; ++i) {
 			const point = points[i];

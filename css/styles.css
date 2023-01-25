@@ -104,7 +104,7 @@ a {
 	text-decoration-thickness: 1.3px;
 	text-underline-offset: 7px;
 	color: blue;
-	opacity:84%;
+	opacity:90%;
 }
 
 .social-url-wrapper {
@@ -212,222 +212,146 @@ i:hover {
         opacity:0.8 
    }
 }
-
 @media only screen and (max-width:1660px) {
-
-	.username-lg,
-	.hero-name {
+	.username-lg, .hero-name {
 		font-size: 56px;
-	}
-
+   }
 	.hero-action {
 		font-size: 20px;
-	}
-
-	.nav-link,
-	.navbar-brand {
+   }
+	.nav-link, .navbar-brand {
 		font-size: 18px;
-	}
-
+   }
 }
-
-
 @media only screen and (max-width:1400px) {
-
-	.username-lg,
-	.hero-name {
+	.username-lg, .hero-name {
 		font-size: 48px;
-	}
-
+   }
 	.hero-name {
 		text-decoration-thickness: 2.5px;
 		text-underline-offset: 10px;
-	}
-
+   }
 	.hero-action {
 		font-size: 16px;
-	}
+   }
 }
-
 @media only screen and (max-width:1199px) {
-
-	.username-lg,
-	.hero-name {
+	.username-lg, .hero-name {
 		font-size: 38px;
-	}
-
+   }
 	.hero-name {
 		text-decoration-thickness: 1.5px;
 		text-underline-offset: 8px;
-	}
-
-	.latest-link,
-	.text-muted,
-	#lat-fol-link {
+   }
+	.latest-link, .text-muted, #lat-fol-link {
 		font-size: 9px;
-	}
-
+   }
 	.fs-35 {
 		font-size: 11px;
-	}
-
-	.nav-link,
-	.navbar-brand {
+   }
+	.nav-link, .navbar-brand {
 		font-size: 16px;
-	}
+   }
 }
-
 @media only screen and (max-width:992px) {
-
-
 	.hide-mob {
 		display: none;
-	}
-
+   }
 	.display-mob {
 		display: block;
-	}
-
-	.latest-link,
-	.text-muted,
-	#lat-fol-link {
+   }
+	.latest-link, .text-muted, #lat-fol-link {
 		font-size: 9px;
-	}
-
+   }
 	.fs-35 {
 		font-size: 9px;
-	}
-
+   }
 	#mob-action {
 		font-size: 16px;
-
-	}
-
-	.nav-link,
-	.navbar-brand {
+   }
+	.nav-link, .navbar-brand {
 		font-size: 16px;
-	}
+   }
 	.navbar-sections{
 		margin-left:0rem;
-	}
-
+   }
 }
-
 @media only screen and (max-width:940px) {
-
-	.username-lg,
-	.hero-name {
+	.username-lg, .hero-name {
 		font-size: 32px;
-	}
-
+   }
 }
-
 @media only screen and (max-width:767px) {
-
-	.username-lg,
-	.hero-name {
+	.username-lg, .hero-name {
 		font-size: 28px;
-	}
-
+   }
 	.hide-mob-2 {
-		zoom: 80%
-	}
-
+		zoom: 80% 
+   }
 	.hero-name {
 		text-decoration-thickness: 1.2px;
 		text-underline-offset: 6px;
-	}
-
+   }
 	#mob-action-link {
 		text-align: end;
-	}
-
+   }
 }
-
 @media only screen and (max-width:576px) {
-
-	.username-lg,
-	.hero-name {
+	.username-lg, .hero-name {
 		font-size: 14px !important;
 		font-weight: 400;
-
-	}
-
+   }
 	.hero-name {
 		font-weight: 300;
-	}
-
+   }
 	#mob-action-link2 {
 		text-align: center;
-
-	}
-
+   }
 	.hide-mob-2 {
 		display: none;
-	}
-
+   }
 	.github-phones {
 		display: block;
-
-	}
-
+   }
 	#mob-action2 {
 		text-decoration-thickness: .5px;
 		text-underline-offset: 2px !important;
 		color: black;
-	}
-
+   }
 	.hero-name {
 		text-decoration: underline;
 		text-decoration-thickness: .2px;
 		text-underline-offset: 3px !important;
 		color: black;
-	}
-
+   }
 	.display-mob {
 		display: none;
-	}
-
+   }
 	.hero-phones {
 		display: block;
-
-	}
-
+   }
 	#mob-action2 {
-		color: blue
-	}
-
+		color: blue 
+   }
 	#mob-action-link2 {
 		font-size: 12px;
-
-	}
-
-	.username-lg,
-	.hero-name {
+   }
+	.username-lg, .hero-name {
 		font-size: 20px;
 		-webkit-text-stroke: none #eeecec !important;
-
-	}
-
+   }
 	.burger {
 		position: relative;
-	}
-
+   }
 	.github-phones {
-		zoom: 90%
-	}
-
-	.nav-link,
-	.navbar-brand {
+		zoom: 90% 
+   }
+	.nav-link, .navbar-brand {
 		font-size: 14px;
-	}
-
-
+   }
 }
-
-
 @media only screen and (max-width:319px) {
 	#all {
-		zoom: 70%
-	}
+		zoom: 70% 
+   }
 }

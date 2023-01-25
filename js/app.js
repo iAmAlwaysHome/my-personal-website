@@ -19,6 +19,6 @@ const fadeEffect = setInterval(() => {
 
 get_latest_repo();
 get_latest_commit();
-get_latest_follower();
+get_random_follower();
 
 window.onload = () => fadeEffect; 

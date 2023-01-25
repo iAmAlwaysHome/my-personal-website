@@ -9,9 +9,9 @@ I plan on updating my portfolio website in the future with possibly displaying g
 
 # Key features
 - HTML canvas are used for cursor trail that changes color.
-- Serves GitHub API data to display latest follower, latest commit and latest created repository.
+- Serves GitHub API data to display random follower, latest commit and latest created repository.
 - Features an animated CSS drawing of 🐾 a cat.
-- Responsiveness. Works on any screen.
+- Responsive. Works on any screen.
 
 # <a href="https://iamalwayshome.com/" target="_blank">See it live</a>
 ![screen1](https://i.ibb.co/hfwYx47/Screenshot-from-2023-01-10-10-08-03.png "portfolio_page1")
