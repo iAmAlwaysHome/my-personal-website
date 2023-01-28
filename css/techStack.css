@@ -28,7 +28,8 @@
 }
 .stack-btn:hover{
     opacity:100%;
-    filter:contrast(150%) 
+    filter:contrast(150%);
+    border: 0.05rem solid rgb(0, 0, 0,0.32);
 }
 h3{
     font-size: .9rem;

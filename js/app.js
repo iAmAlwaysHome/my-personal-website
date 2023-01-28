@@ -1,5 +1,21 @@
 const preloader = document.querySelector(".preloader");
 
+startAnimation = () => {
+	const canvas = document.getElementById("canvas");
+	const ctx = canvas.getContext("2d");
+
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	window.addEventListener(
+		"resize",
+		({ target: { innerWidth, innerHeight } }) => {
+			canvas.width = innerWidth;
+			canvas.height = innerHeight;
+		},
+		false
+	);
+};
+
 const fadeEffect = setInterval(() => {
   if (!preloader.style.opacity) {
     preloader.style.opacity = 1;
@@ -10,12 +26,12 @@ const fadeEffect = setInterval(() => {
     startAnimation();
     clearInterval(fadeEffect);
     preloader.style.display = "none";
-    setTimeout(() => {
-      document.querySelector(`#app`).style.opacity = 1;
+    document.querySelector(`#app`).style.opacity = 1;
+    setTimeout(() => {     
       rand();
-    }, 500);
+    }, 2200);
   }
-}, 100);
+}, 50);
 
 get_latest_repo();
 get_latest_commit();
